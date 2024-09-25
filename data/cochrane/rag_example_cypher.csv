@@ -1,0 +1,7 @@
+question;cypher
+"How many studies are being evaluated in the review CD000011?"; "MATCH (s: SystematicReview)-[INCLUDES]->(st: Study) WHERE s.review_code = 'CD000011' RETURN s, count(st) as totalStudies"
+"Given the random sequence generation bias type, how many evaluations are from the review CD007876 with LOW risk of bias?"; "MATCH (s: SystematicReview)-[CONTAINS]->(e: Evaluation)-[GIVEN]->(b: BiasType) WHERE s.review_code = 'CD007876' and b.name =~ '(?i).*random sequence generation.*' and e.rob_judgment = 'LOW' RETURN count(e) as totalEvaluations"
+"What are the most common support for judgment for the bias type of blinding of participants and personnel in the review CD007876?"; "MATCH (s: SystematicReview)-[CONTAINS]->(e: Evaluation)-[g: GIVEN]->(b: BiasType) HERE s.review_code = 'CD007876' and b.name =~ '(?i).*blinding.*' RETURN e.support_judgment"
+"What is the total of references by study in the review CD000011?"; "MATCH (s: SystematicReview {review_code: 'CD000011'})-[INCLUDES]->(st: Study)-[CITES]->(r: Reference) RETURN st, count(r) as totalReferences ORDER BY totalReferences DESC"
+"List all the references for the studies in the review CD007876."; "MATCH (s: SystematicReview)-[i: INCLUDES]->(st: Study)-[c: CITES]->(r: Reference) WHERE s.review_code = 'CD007876' RETURN s, i, st, c, r"
+"Which systematic reviews evaluate the article with pmcid PMC1586420?"; "MATCH (s: SystematicReview)-[: INCLUDES]->(st: Study)-[CITES]->(r: Reference) WHERE r.pmcid = 'PMC1586420' RETURN s"
