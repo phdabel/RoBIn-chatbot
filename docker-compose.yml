@@ -12,6 +12,9 @@ services:
       context: ./chatbot_api
     env_file:
       - .env
+    volumes:
+      - ./chatbot_api/src/:/app/
+      - ./chroma_data:/chroma_data
     depends_on:
       - robin_neo4j_etl
     ports:
@@ -22,6 +25,8 @@ services:
       context: ./chatbot_frontend
     env_file:
       - .env
+    volumes:
+      - ./chatbot_frontend/src/:/app/
     depends_on:
       - chatbot_api
     ports:

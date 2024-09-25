@@ -1,5 +1,10 @@
 from pydantic import BaseModel
 
+class RoBInFileInput(BaseModel):
+    file_name: str
+    content: bytes
+    text: str
+
 class RoBInQueryInput(BaseModel):
     text: str
 

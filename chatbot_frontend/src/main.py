@@ -41,6 +41,8 @@ for message in st.session_state.messages:
             with st.status("How was this generated", state="complete"):
                 st.info(message["explanation"])
 
+uploaded_file = st.file_uploader("Upload an article", type=['txt', 'pdf'])
+
 if prompt := st.chat_input("What do you want to know?"):
     st.chat_message("user").markdown(prompt)
 

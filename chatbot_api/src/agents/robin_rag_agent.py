@@ -7,18 +7,32 @@ from langchain.agents import (
     AgentExecutor,
 )
 from langchain import hub
+
+# from chatbot_api.src.chains.cochrane_cypher_chain import cochrane_cypher_chain
 # from chatbot_api.src.chains.review_study_chain import reviews_vector_chain
 # from chatbot_api.src.chains.pubmed_article_chain import article_retrieval_chain
+# from chatbot_api.src.chains.file_qa_chain import file_qa_chain
+
 from chains.cochrane_cypher_chain import cochrane_cypher_chain
 from chains.review_study_chain import reviews_vector_chain
 from chains.pubmed_article_chain import article_retrieval_chain
+from chains.file_qa_chain import file_qa_chain
 
 
 ROBIN_AGENT_MODEL = os.getenv("ROBIN_AGENT_MODEL", default="gemma2")
 
-robin_agent_prompt = hub.pull("hwchase17/react")
 
 tools = [
+    # Tool(
+    #     name="File",
+    #     func=file_qa_chain.invoke,
+    #     description="""Useful for answering questions about documents uploaded by the user.
+    #     If you have a document that you would like to ask questions about, upload it and ask your question. 
+    #     Use the entire prompt as input to the tool. For instance, if the prompt is "What are the results 
+    #     of the clinical trial on COVID-19 treatment?", the input should be "What are the results of the 
+    #     clinical trial on COVID-19 treatment?".
+    #     """,
+    # ),
     Tool(
         name="Graph",
         func=cochrane_cypher_chain.invoke,
@@ -53,6 +67,8 @@ tools = [
     ),
 ]
 
+robin_agent_prompt = hub.pull("hwchase17/react")
+
 robin_agent_prompt.partial(
     tools=render_text_description(tools),
     tool_names=", ".join([t.name for t in tools])
@@ -67,12 +83,13 @@ chat_model = OllamaLLM(
 robin_rag_agent = create_react_agent(
     llm=chat_model,
     prompt=robin_agent_prompt,
-    tools=tools,
+    tools=tools
 )
 
 robin_rag_agent_executor = AgentExecutor(
     agent=robin_rag_agent,
     tools=tools,
+    
     handle_parsing_errors=True,
     return_intermediate_steps=True,
     verbose=True,
