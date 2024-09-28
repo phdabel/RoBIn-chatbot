@@ -3,12 +3,13 @@ import requests
 import streamlit as st
 
 CHATBOT_URL = os.getenv("CHATBOT_URL", "http://localhost:8000/robin-rag-agent")
+FILE_CHATBOT_URL = os.getenv("FILE_CHATBOT_URL", "http://localhost:8000/robin-file-agent")
 
 with st.sidebar:
     st.header("About")
     st.markdown(
         """
-        I am RoBIn (Risk of Bias Inference) System Chatbot, an AI
+        I am RoBIn (Risk of Bias Inference), an AI
         agent designed to answer questions about PubMed articles indexed in my database,
         and risk of bias evaluation from Cochrane systematic reviews. I make use of a
         retrieval-augment generation (RAG) models to answer questions about
@@ -24,7 +25,7 @@ with st.sidebar:
     st.markdown("- What are the interventions studied in clinical trials about COVID-19 treatment?")
 
 
-st.title("RoBIn System Chatbot")
+st.title("RoBIn Chatbot")
 st.info(
     "Ask me questions about clinical trials, PubMed articles, and risk of bias evaluations."
 )
@@ -41,9 +42,11 @@ for message in st.session_state.messages:
             with st.status("How was this generated", state="complete"):
                 st.info(message["explanation"])
 
-uploaded_file = st.file_uploader("Upload an article", type=['txt', 'pdf'])
+prompt = st.chat_input("What do you want to know?")
+uploaded_file = st.file_uploader("Upload a file", type=["txt"])
 
-if prompt := st.chat_input("What do you want to know?"):
+if prompt:
+
     st.chat_message("user").markdown(prompt)
 
     st.session_state.messages.append({"role": "user", "output": prompt})
@@ -51,11 +54,20 @@ if prompt := st.chat_input("What do you want to know?"):
     data = {"text": prompt}
 
     with st.spinner("Searching for an answer..."):
-        response = requests.post(CHATBOT_URL, json=data)
+        if uploaded_file is not None:
+            response = requests.post(FILE_CHATBOT_URL, 
+                                     data={"query_text": prompt},
+                                     files={"uploaded_file": uploaded_file},
+                                     headers={"Content-Type": "multipart/form-data"})
+        else:
+            response = requests.post(CHATBOT_URL, json=data)
 
-        if response.status_code == 200:
+        if response.status_code == 200 and uploaded_file is None:
             output_text = response.json()["output"]
             explanation = response.json()["intermediate_steps"]
+        elif response.status_code == 200 and uploaded_file is not None:
+            output_text = response.json()["answer"]["output"]
+            explanation = response.json()["answer"]["intermediate_steps"]
 
         else:
             output_text = """An error occurred while processing your message.
@@ -72,3 +84,13 @@ if prompt := st.chat_input("What do you want to know?"):
             "explanation": explanation,
         }
     )
+
+# file input
+# uploaded_file = st.file_uploader("Upload a file", type=["txt"])
+# if uploaded_file and prompt:
+#     st.session_state.messages.append({"role": "user", "output": "File uploaded"})
+
+#     data = {"query_text": prompt, "uploaded_file": uploaded_file}
+
+#     with st.spinner("Searching for an answer..."):
+#         response = requests.post(FILE_CHATBOT_URL, json=data)

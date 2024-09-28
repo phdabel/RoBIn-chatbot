@@ -15,6 +15,7 @@ services:
     volumes:
       - ./chatbot_api/src/:/app/
       - ./chroma_data:/chroma_data
+      - ./chat_histories:/chat_histories
     depends_on:
       - robin_neo4j_etl
     ports:
