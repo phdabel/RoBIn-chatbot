@@ -51,7 +51,7 @@ class FileQAChain(Chain):
             # text_splitter = SemanticChunker(embeddings=self._embeddings, number_of_chunks=100)
             # texts = text_splitter.create_documents([document])
 
-            db = Chroma.from_documents(documents=texts, embedding=self._embeddings, persist_directory=os.getenv('CHROMA_DB_PATH'))
+            db = Chroma.from_documents(documents=texts, embedding=self._embeddings)#, persist_directory=os.getenv('CHROMA_DB_PATH'))
             qa_chain = MultiQueryRetriever.from_llm(
                 llm=self._llm_model,
                 retriever=db.as_retriever(k=16)

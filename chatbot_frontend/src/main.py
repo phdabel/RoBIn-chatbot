@@ -18,11 +18,13 @@ with st.sidebar:
     )
 
     st.header("Example Questions")
+    st.markdown("- Describe the randomization method of this study; if it is not stated in the document do not invent or assume anything about it. Just say, that it is not informed in the text. Use the RoB tool to evaluate the risk of bias in the study, regarding selection bias (random sequence generation), given the resultant description.")
+    st.markdown("- What are the main outcomes of the study? Summarize the results of the study.")
     st.markdown("- What are the concerns about randomization in the risk of bias assessment?")
     st.markdown("- What interventions are being studied to treat ADHD?")
     st.markdown("- What are the results of the clinical trial on COVID-19 treatment?")
     st.markdown("- Summarize supporting sentences from low risk of bias trials.")
-    st.markdown("- What are the interventions studied in clinical trials about COVID-19 treatment?")
+    st.markdown("- Which interventions are studied in clinical trials about COVID-19 treatment?")
 
 
 st.title("RoBIn Chatbot")
@@ -56,9 +58,8 @@ if prompt:
     with st.spinner("Searching for an answer..."):
         if uploaded_file is not None:
             response = requests.post(FILE_CHATBOT_URL, 
-                                     data={"query_text": prompt},
-                                     files={"uploaded_file": uploaded_file},
-                                     headers={"Content-Type": "multipart/form-data"})
+                                     params={"query_text": prompt, "filename": uploaded_file.name},
+                                     files={"uploaded_file": uploaded_file.getvalue()})
         else:
             response = requests.post(CHATBOT_URL, json=data)
 
