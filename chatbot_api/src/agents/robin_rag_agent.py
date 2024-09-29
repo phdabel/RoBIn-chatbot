@@ -1,7 +1,6 @@
 import os
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts.prompt import PromptTemplate
-# from langchain_core.runnables import chain
 
 from langchain_core.tools import render_text_description
 from langchain.agents import (
@@ -15,46 +14,16 @@ from langchain import hub
 # from chatbot_api.src.chains.cochrane_cypher_chain import cochrane_cypher_chain
 # from chatbot_api.src.chains.review_study_chain import reviews_vector_chain
 # from chatbot_api.src.chains.pubmed_article_chain import article_retrieval_chain
-# from chatbot_api.src.chains.file_qa_chain import file_qa_chain, FileQARunnable
 
 from memory.BaseMemory import ModifiedConversationBufferMemory
 from chains.cochrane_cypher_chain import cochrane_cypher_chain
 from chains.review_study_chain import reviews_vector_chain
 from chains.pubmed_article_chain import article_retrieval_chain
-# from chains.file_qa_chain import file_qa_chain
 
 
 ROBIN_AGENT_MODEL = os.getenv("ROBIN_AGENT_MODEL", default="gemma2")
 
-# @chain
-# def file_tool_handler(input_data):
-#     if isinstance(input_data, dict):
-#         query_text = input_data.get('query_text')
-#         uploaded_file = input_data.get('uploaded_file')
-#     else:
-#         return "Input should be a dictionary with 'query text' and 'uploaded file'"
-    
-#     if not query_text or not uploaded_file:
-#         return "Please provide both 'query_text' and 'uploaded_file'"
-    
-#     return file_qa_chain.invoke({"query_text": query_text, "uploaded_file": uploaded_file})
-
-# file_qa_runnable = FileQARunnable(file_qa_chain)
-
 tools = [
-    # Tool(
-    #     name="File",
-    #     func=file_qa_runnable.invoke,
-    #     description="""Useful for answering questions about documents uploaded by the user.
-    #     If you have a document that you would like to ask questions about, upload it and ask your question. 
-    #     The input should be in the form of a dictionary with the keys "query_text" and "uploaded_file".
-    #     Example:
-    #     {
-    #         "query_text": "What are the main conclusions of the document?",
-    #         "uploaded_file": <_io.BufferedReader name='filepath.txt'>
-    #     }
-    #     """,
-    # ),
     Tool(
         name="Graph",
         func=cochrane_cypher_chain.invoke,
@@ -78,13 +47,15 @@ tools = [
         """,
     ),
     Tool(
-        name="PubMed",
+        name="ArticleIndex",
         func=article_retrieval_chain.invoke,
         description="""Useful for answering questions about clinical trial 
-        publications from PubMed. Use the entire prompt as input to the tool. 
-        For instance, if the prompt is "What interventions are studied in clinical 
-        trials about COVID-19 treatment?", the input should be "What interventions 
-        are studied in clinical trials about COVID-19 treatment?".
+        publications, when searching for articles, papers or studies. 
+        Use the entire prompt as input to the tool. For instance, if the prompt is 
+        "What interventions are studied in clinical trials about COVID-19 treatment?", 
+        the input should be "What interventions are studied in clinical trials about 
+        COVID-19 treatment?". If the prompt is "Search for articles about cardiac diseases.",
+        the input should be "Search for articles about cardiac diseases.".
         """,
     ),
 ]

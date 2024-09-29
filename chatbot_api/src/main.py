@@ -9,7 +9,7 @@ app = FastAPI(
     description="Endpoints for RoBIn system RAG chatbot",
 )
 
-@async_retry(max_retries=10, delay=1)
+@async_retry(max_retries=3, delay=1)
 async def invoke_agent_with_retry(query: str):
     """Retry the agent if a tool fails to run.
 
@@ -19,7 +19,7 @@ async def invoke_agent_with_retry(query: str):
     return await robin_rag_agent_executor.ainvoke({"input": query}, config={"configurable": {"session_id": "robin-session"}})
 
 
-@async_retry(max_retries=10, delay=1)
+@async_retry(max_retries=3, delay=1)
 async def invoke_file_agent_with_retry(query_text: str, uploaded_file: UploadFile):
     return await file_qa_chain.ainvoke({"query_text": query_text, "uploaded_file": uploaded_file.file})
 

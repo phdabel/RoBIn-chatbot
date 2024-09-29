@@ -18,13 +18,15 @@ with st.sidebar:
     )
 
     st.header("Example Questions")
-    st.markdown("- Describe the randomization method of this study; if it is not stated in the document do not invent or assume anything about it. Just say, that it is not informed in the text. Use the RoB tool to evaluate the risk of bias in the study, regarding selection bias (random sequence generation), given the resultant description.")
+    st.markdown("- Describe the randomization method of this study; if it is not stated in the document do not invent or assume anything about it. Just say, that it is not informed in the text.")
+    st.markdown("- Use the RoB tool to evaluate the risk of bias in the study, regarding selection bias (random sequence generation), given the resultant description.")
     st.markdown("- What are the main outcomes of the study? Summarize the results of the study.")
     st.markdown("- What are the concerns about randomization in the risk of bias assessment?")
     st.markdown("- What interventions are being studied to treat ADHD?")
     st.markdown("- What are the results of the clinical trial on COVID-19 treatment?")
     st.markdown("- Summarize supporting sentences from low risk of bias trials.")
     st.markdown("- Which interventions are studied in clinical trials about COVID-19 treatment?")
+    st.markdown("- How many references per study exist in the review with code CD000011?")
 
 
 st.title("RoBIn Chatbot")
@@ -85,13 +87,3 @@ if prompt:
             "explanation": explanation,
         }
     )
-
-# file input
-# uploaded_file = st.file_uploader("Upload a file", type=["txt"])
-# if uploaded_file and prompt:
-#     st.session_state.messages.append({"role": "user", "output": "File uploaded"})
-
-#     data = {"query_text": prompt, "uploaded_file": uploaded_file}
-
-#     with st.spinner("Searching for an answer..."):
-#         response = requests.post(FILE_CHATBOT_URL, json=data)
