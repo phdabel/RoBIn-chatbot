@@ -2,10 +2,8 @@ import os
 from typing import ClassVar
 from typing import Optional, Dict, Any
 from pydantic import PrivateAttr
-from langchain.schema.runnable import Runnable
 from langchain.chains.base import Chain
 from langchain.vectorstores import Chroma
-from ast import literal_eval
 # from langchain.text_splitter import CharacterTextSplitter
 # from langchain_experimental.text_splitter import SemanticChunker
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -15,7 +13,6 @@ from langchain_core.embeddings import Embeddings
 from langchain.chains import RetrievalQA
 from langchain.retrievers.multi_query import MultiQueryRetriever
 from langchain_ollama import OllamaLLM, OllamaEmbeddings
-from agents.robin_rag_agent import robin_rag_agent_executor
 
 
 class FileQAChain(Chain):
@@ -72,15 +69,15 @@ Context:
 
 Instructions:
 {query_text}"""
-            # answer = self._llm_model.invoke(prompt)
+            answer = self._llm_model.invoke(prompt)
+
+            return {"answer": {"output": answer, "intermediate_steps": []}}
+            # answer = robin_rag_agent_executor.invoke({'input': prompt})
+            # answer["intermediate_steps"] = [
+            #     str(s) for s in answer["intermediate_steps"]
+            # ]
 
             # return {"answer": answer}
-            answer = robin_rag_agent_executor.invoke({'input': prompt})
-            answer["intermediate_steps"] = [
-                str(s) for s in answer["intermediate_steps"]
-            ]
-
-            return {"answer": answer}
         else:
             return {"answer": {"output": "No file uploaded", "intermediate_steps": []}}
         
