@@ -1,11 +1,16 @@
 import os
 from langchain_community.graphs import Neo4jGraph
 from langchain.chains import GraphCypherQAChain
+from langchain_openai import ChatOpenAI
 from langchain_ollama import OllamaLLM
 from langchain.prompts import PromptTemplate
 
-ROBIN_QA_MODEL = os.getenv("ROBIN_QA_MODEL")
 ROBIN_CYPHER_MODEL = os.getenv("ROBIN_CYPHER_MODEL")
+
+GPT_MODE = int(os.getenv("GPT_MODE"))
+GPT_MODEL = os.getenv("GPT_MODEL")
+GPT_TEMPERATURE = float(os.getenv("GPT_TEMPERATURE"))
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 graph = Neo4jGraph(
     url=os.getenv("NEO4J_URI"),
@@ -75,12 +80,17 @@ qa_generation_prompt = PromptTemplate(
     input_variables=["context", "question"], template=qa_generation_template
 )
 
-ollama_model = OllamaLLM(model="gemma2",
-                         temperature=0, 
-                         base_url=os.getenv('OLLAMA_BASE_URL', default='http://host.docker.internal:11434'))
+if GPT_MODE == 1:
+    model = ChatOpenAI(model=GPT_MODEL,
+                       temperature=GPT_TEMPERATURE,
+                       api_key=OPENAI_API_KEY)
+else:
+    model = OllamaLLM(model=ROBIN_CYPHER_MODEL, 
+                      temperature=0, 
+                      base_url=os.getenv('OLLAMA_BASE_URL', default='http://localhost:11434'))
 
 cochrane_cypher_chain = GraphCypherQAChain.from_llm(
-    llm=ollama_model,
+    llm=model,
     graph=graph,
     verbose=True,
     qa_prompt=qa_generation_prompt,

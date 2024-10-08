@@ -5,6 +5,7 @@ from langchain_elasticsearch.client import create_elasticsearch_client
 from typing import Dict
 from langchain.chains import RetrievalQA
 from langchain_ollama import OllamaLLM
+from langchain_openai import ChatOpenAI
 from langchain.prompts import (
     PromptTemplate,
     SystemMessagePromptTemplate,
@@ -12,7 +13,11 @@ from langchain.prompts import (
     ChatPromptTemplate,
 )
 
-ROBIN_QA_MODEL = "gemma2"
+ROBIN_QA_MODEL = os.getenv('ROBIN_QA_MODEL')
+GPT_MODE = int(os.getenv("GPT_MODE"))
+GPT_MODEL = os.getenv("GPT_MODEL")
+GPT_TEMPERATURE = float(os.getenv("GPT_TEMPERATURE"))
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 es_client = create_elasticsearch_client(
     url=os.getenv("ES_BASE_URL"),
@@ -54,12 +59,17 @@ article_prompt = ChatPromptTemplate(
     input_variables=["context", "question"], messages=messages
 )
 
-ollama_model = OllamaLLM(model=ROBIN_QA_MODEL,
-                         temperature=0,
-                         base_url=os.getenv('OLLAMA_BASE_URL', default='http://host.docker.internal:11434'))
+if GPT_MODE == 1:
+    model = ChatOpenAI(model=GPT_MODEL,
+                       temperature=GPT_TEMPERATURE,
+                       api_key=OPENAI_API_KEY)
+else:
+    model = OllamaLLM(model=ROBIN_QA_MODEL, 
+                      temperature=0, 
+                      base_url=os.getenv('OLLAMA_BASE_URL', default='http://localhost:11434'))
 
 article_retrieval_chain = RetrievalQA.from_chain_type(
-    llm=ollama_model,
+    llm=model,
     chain_type="stuff",
     retriever=bm25_retriever,
 )

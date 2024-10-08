@@ -13,6 +13,9 @@ from langchain_core.embeddings import Embeddings
 from langchain.chains import RetrievalQA
 from langchain.retrievers.multi_query import MultiQueryRetriever
 from langchain_ollama import OllamaLLM, OllamaEmbeddings
+from langchain_openai import ChatOpenAI
+
+from agents.robin_rag_agent import robin_rag_agent_executor
 
 
 class FileQAChain(Chain):
@@ -69,23 +72,35 @@ Context:
 
 Instructions:
 {query_text}"""
-            answer = self._llm_model.invoke(prompt)
+            # answer = self._llm_model.invoke(prompt)
 
-            return {"answer": {"output": answer, "intermediate_steps": []}}
-            # answer = robin_rag_agent_executor.invoke({'input': prompt})
-            # answer["intermediate_steps"] = [
-            #     str(s) for s in answer["intermediate_steps"]
-            # ]
+            # return {"answer": {"output": answer, "intermediate_steps": []}}
+            answer = robin_rag_agent_executor.invoke({'input': prompt})
+            answer["intermediate_steps"] = [
+                str(s) for s in answer["intermediate_steps"]
+            ]
 
-            # return {"answer": answer}
+            return {"answer": answer}
         else:
             return {"answer": {"output": "No file uploaded", "intermediate_steps": []}}
-        
+
+ROBIN_FILE_CHAIN_MODEL = os.getenv("ROBIN_FILE_CHAIN_MODEL")
+GPT_MODE = int(os.getenv("GPT_MODE"))
+GPT_MODEL = os.getenv("GPT_MODEL")
+GPT_TEMPERATURE = float(os.getenv("GPT_TEMPERATURE"))
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 embeddings = OllamaEmbeddings(model="mxbai-embed-large", base_url=os.getenv('OLLAMA_BASE_URL', default='http://localhost:11434'))#base_url=os.getenv('OLLAMA_BASE_URL', default='http://host.docker.internal:11434'))
-ollama_model = OllamaLLM(model="gemma2",
-                         temperature=0,
-                         base_url=os.getenv('OLLAMA_BASE_URL', default='http://localhost:11434'))#default='http://host.docker.internal:11434'))
-file_qa_chain = FileQAChain(llm_model=ollama_model, embeddings=embeddings)
+
+if GPT_MODE == 1:
+    model = ChatOpenAI(model=GPT_MODEL,
+                       temperature=GPT_TEMPERATURE,
+                       api_key=OPENAI_API_KEY)
+else:
+    model = OllamaLLM(model=ROBIN_FILE_CHAIN_MODEL,
+                      temperature=0, 
+                      base_url=os.getenv('OLLAMA_BASE_URL', default='http://localhost:11434'))
+
+file_qa_chain = FileQAChain(llm_model=model, embeddings=embeddings)
 
     

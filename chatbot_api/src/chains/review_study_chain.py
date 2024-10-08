@@ -3,6 +3,7 @@ import os
 from langchain_community.vectorstores import Neo4jVector
 from langchain.chains import RetrievalQA
 from langchain_ollama import OllamaLLM
+from langchain_openai import ChatOpenAI
 from langchain_ollama.embeddings import OllamaEmbeddings
 from langchain.prompts import (
     PromptTemplate,
@@ -12,9 +13,13 @@ from langchain.prompts import (
 )
 
 ROBIN_QA_MODEL = os.getenv("ROBIN_QA_MODEL")
+GPT_MODE = int(os.getenv("GPT_MODE"))
+GPT_MODEL = os.getenv("GPT_MODEL")
+GPT_TEMPERATURE = float(os.getenv("GPT_TEMPERATURE"))
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 neo4j_vector_index = Neo4jVector.from_existing_graph(
-    embedding=OllamaEmbeddings(model="mxbai-embed-large", base_url=os.getenv('OLLAMA_BASE_URL', default='http://host.docker.internal:11434')),
+    embedding=OllamaEmbeddings(model="mxbai-embed-large", base_url=os.getenv('OLLAMA_BASE_URL', default='http://localhost:11434')),
     url=os.getenv("NEO4J_URI"),
     username=os.getenv("NEO4J_USERNAME"),
     password=os.getenv("NEO4J_PASSWORD"),
@@ -49,12 +54,17 @@ review_prompt = ChatPromptTemplate(
     input_variables=["context", "question"], messages=messages
 )
 
-ollama_model = OllamaLLM(model="gemma2",
-                         temperature=0,
-                         base_url=os.getenv('OLLAMA_BASE_URL', default='http://host.docker.internal:11434'))
+if GPT_MODE == 1:
+    model = ChatOpenAI(model=GPT_MODEL, 
+                       temperature=GPT_TEMPERATURE, 
+                       api_key=OPENAI_API_KEY)
+else:
+    model = OllamaLLM(model=ROBIN_QA_MODEL,
+                      temperature=0,
+                      base_url=os.getenv('OLLAMA_BASE_URL', default='http://localhost:11434'))
 
 reviews_vector_chain = RetrievalQA.from_chain_type(
-    llm=ollama_model,
+    llm=model,
     chain_type="stuff",
     retriever=neo4j_vector_index.as_retriever(k=12),
 )
