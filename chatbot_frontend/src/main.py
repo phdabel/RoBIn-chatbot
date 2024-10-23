@@ -28,8 +28,18 @@ with st.sidebar:
     st.markdown("- Which interventions are studied in clinical trials about COVID-19 treatment?")
     st.markdown("- How many references per study exist in the review with code CD000011?")
 
+col1, col2 = st.columns([0.2, 0.8], gap='small')
 
-st.title("RoBIn Chatbot")
+with col1:
+    st.image("robin-logo.png", width=100)
+
+with col2:
+    st.title("RoBIn Chatbot")
+
+st.markdown("---")
+    
+st.warning("This is a demo version of the RoBIn Chatbot and the responses may not be completely accurate. The tool was developed for research purposes and should not be used in public health settings without expert curation.")
+
 st.info(
     "Ask me questions about clinical trials, PubMed articles, and risk of bias evaluations."
 )
@@ -55,7 +65,7 @@ if prompt:
 
     st.session_state.messages.append({"role": "user", "output": prompt})
 
-    data = {"text": prompt}
+    data = {"text": prompt, "session": "robin"}
 
     with st.spinner("Searching for an answer..."):
         if uploaded_file is not None:

@@ -7,6 +7,7 @@ class RoBInFileInput(BaseModel):
 
 class RoBInQueryInput(BaseModel):
     text: str
+    session: str
 
 class RoBInQueryOutput(BaseModel):
     input: str

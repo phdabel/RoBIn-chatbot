@@ -1,0 +1,188 @@
+index,question,filename,label
+0,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC2253708.txt,HIGH
+1,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC2774684.txt,HIGH
+2,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC4255918.txt,HIGH
+3,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC9209685.txt,HIGH
+4,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC4994798.txt,HIGH
+5,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC4375656.txt,HIGH
+6,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC4741513.txt,HIGH
+7,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC4799324.txt,HIGH
+8,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC4108019.txt,HIGH
+9,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC8713487.txt,HIGH
+10,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC4727091.txt,HIGH
+11,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC1836296.txt,HIGH
+12,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC2868791.txt,HIGH
+13,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC3042105.txt,LOW
+14,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC2795576.txt,LOW
+15,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC2922963.txt,LOW
+16,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC7382300.txt,LOW
+17,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC2879164.txt,LOW
+18,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC1084350.txt,LOW
+19,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC1764871.txt,LOW
+20,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC5031241.txt,LOW
+21,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC3599396.txt,LOW
+22,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC4480925.txt,LOW
+23,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC3058596.txt,LOW
+24,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC7942391.txt,LOW
+26,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC3349581.txt,LOW
+27,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC240108.txt,LOW
+28,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC4359817.txt,LOW
+29,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC4950630.txt,LOW
+30,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC5084335.txt,LOW
+31,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC6638737.txt,LOW
+32,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC1612983.txt,LOW
+33,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC2791828.txt,LOW
+34,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC2350357.txt,LOW
+35,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC3100911.txt,LOW
+36,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC2840223.txt,LOW
+37,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC8357852.txt,LOW
+38,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC4117390.txt,UNCLEAR
+39,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC2787727.txt,UNCLEAR
+40,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC4353278.txt,UNCLEAR
+41,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC2890528.txt,UNCLEAR
+42,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC3133979.txt,UNCLEAR
+43,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC2350641.txt,UNCLEAR
+44,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC3765148.txt,UNCLEAR
+45,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC5035000.txt,UNCLEAR
+46,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC5839818.txt,UNCLEAR
+47,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC8071356.txt,UNCLEAR
+48,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC7863698.txt,UNCLEAR
+49,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence concealment.,PMC1635553.txt,UNCLEAR
+50,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2253708.txt,HIGH
+51,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC1586420.txt,HIGH
+52,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2550494.txt,HIGH
+54,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC4335409.txt,HIGH
+55,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2929216.txt,HIGH
+57,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC4108019.txt,HIGH
+58,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC5691905.txt,HIGH
+59,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC4697230.txt,HIGH
+60,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3049170.txt,HIGH
+61,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3092553.txt,HIGH
+62,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3032994.txt,HIGH
+63,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3046986.txt,LOW
+64,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2856811.txt,LOW
+65,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3253947.txt,LOW
+66,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3443313.txt,LOW
+67,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3030747.txt,LOW
+68,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2760542.txt,LOW
+69,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2865631.txt,LOW
+70,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2795576.txt,LOW
+71,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3122282.txt,LOW
+72,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3187863.txt,LOW
+73,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC8612131.txt,LOW
+74,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC8096422.txt,LOW
+75,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2413207.txt,LOW
+76,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3599396.txt,LOW
+77,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3349581.txt,LOW
+78,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2881167.txt,LOW
+79,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC240108.txt,LOW
+80,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC4950630.txt,LOW
+81,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC4353278.txt,LOW
+82,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC7508281.txt,LOW
+83,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC5000429.txt,LOW
+84,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC5316801.txt,LOW
+85,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3100911.txt,LOW
+86,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2376383.txt,LOW
+87,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC7601060.txt,LOW
+88,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC4117390.txt,UNCLEAR
+89,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC1836829.txt,UNCLEAR
+90,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3017215.txt,UNCLEAR
+91,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC5995071.txt,UNCLEAR
+92,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC4480925.txt,UNCLEAR
+93,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC4090303.txt,UNCLEAR
+94,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2033386.txt,UNCLEAR
+95,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC1678278.txt,UNCLEAR
+96,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC1821023.txt,UNCLEAR
+97,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2784033.txt,UNCLEAR
+98,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC3019193.txt,UNCLEAR
+99,Use the risk of bias tool to evaluate the risk of bias concerning the allocation sequence randomization.,PMC2956597.txt,UNCLEAR
+100,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC3042105.txt,HIGH
+101,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC4986514.txt,HIGH
+102,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC4624325.txt,HIGH
+103,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC4383122.txt,HIGH
+104,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC4979851.txt,HIGH
+105,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC3244397.txt,HIGH
+106,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC3558664.txt,HIGH
+107,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC2914117.txt,HIGH
+108,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC3032994.txt,HIGH
+109,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC4727091.txt,HIGH
+112,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC4293005.txt,HIGH
+113,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC4669680.txt,LOW
+114,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC2922963.txt,LOW
+115,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC3929943.txt,LOW
+116,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC1813732.txt,LOW
+117,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC4950630.txt,LOW
+118,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC3015143.txt,LOW
+119,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC5316801.txt,LOW
+120,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC7600207.txt,LOW
+121,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC7601060.txt,LOW
+122,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC5099314.txt,LOW
+123,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC2768290.txt,LOW
+124,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC5281664.txt,LOW
+125,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC4445462.txt,LOW
+126,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC2956597.txt,LOW
+127,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC4739405.txt,LOW
+128,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC1995577.txt,LOW
+131,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC3134427.txt,LOW
+132,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC6419414.txt,LOW
+133,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC2550494.txt,LOW
+134,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC3631421.txt,LOW
+135,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC2361245.txt,LOW
+136,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC2847809.txt,LOW
+137,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC8133164.txt,LOW
+138,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC240108.txt,UNCLEAR
+140,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC3532975.txt,UNCLEAR
+141,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC7863698.txt,UNCLEAR
+142,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC3954742.txt,UNCLEAR
+143,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC2375877.txt,UNCLEAR
+144,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC4715387.txt,UNCLEAR
+145,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC2762959.txt,UNCLEAR
+147,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC1420328.txt,UNCLEAR
+148,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC4920412.txt,UNCLEAR
+149,Use the risk of bias tool to evaluate the risk of bias concerning the blinding of outcome assessors.,PMC3477788.txt,UNCLEAR
+150,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC4117390.txt,HIGH
+151,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3112287.txt,HIGH
+154,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3042105.txt,HIGH
+155,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC1995577.txt,HIGH
+156,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC6379822.txt,HIGH
+157,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC4815610.txt,HIGH
+158,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC2956530.txt,HIGH
+159,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC1586420.txt,HIGH
+160,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3651972.txt,HIGH
+161,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC5093626.txt,HIGH
+162,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC7834511.txt,HIGH
+163,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3164914.txt,LOW
+164,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC4117390.txt,LOW
+165,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3112287.txt,LOW
+167,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC4738867.txt,LOW
+168,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3905804.txt,LOW
+169,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3929943.txt,LOW
+170,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC2834887.txt,LOW
+171,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3232054.txt,LOW
+172,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC6436611.txt,LOW
+173,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3937455.txt,LOW
+174,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC4199180.txt,LOW
+175,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC6531851.txt,LOW
+176,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3134427.txt,LOW
+177,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3664840.txt,LOW
+178,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC6942588.txt,LOW
+179,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3641467.txt,LOW
+180,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC4025449.txt,LOW
+181,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC2776277.txt,LOW
+182,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC5839818.txt,LOW
+183,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC4046844.txt,LOW
+184,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC5128350.txt,LOW
+185,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3415379.txt,LOW
+186,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3104850.txt,LOW
+187,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3581561.txt,LOW
+188,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3042105.txt,UNCLEAR
+189,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3227016.txt,UNCLEAR
+190,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC4739405.txt,UNCLEAR
+191,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC5345794.txt,UNCLEAR
+192,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC2849739.txt,UNCLEAR
+193,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC4450656.txt,UNCLEAR
+194,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC5017271.txt,UNCLEAR
+195,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3888618.txt,UNCLEAR
+196,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC5274550.txt,UNCLEAR
+198,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC2586352.txt,UNCLEAR
+199,"Use the risk of bias tool to evaluate the risk of bias concerning the blinding of participants, and personnel.",PMC3448332.txt,UNCLEAR

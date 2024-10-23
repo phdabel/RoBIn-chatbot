@@ -143,7 +143,7 @@ else:
         temperature=0,
     )
 
-memory = ModifiedConversationBufferMemory(memory_key="chat_history", output_key="output", input_key="input")
+memory = ModifiedConversationBufferMemory(memory_key="chat_history", output_key="output", input_key="input", max_length=3, return_messages=True)
 
 robin_rag_agent = create_react_agent(
     model,

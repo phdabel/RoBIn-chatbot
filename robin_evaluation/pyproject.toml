@@ -1,0 +1,10 @@
+[project]
+name = "robin_evaluation"
+version = "0.1"
+dependencies = [
+   "requests==2.25.1",
+   "pandas==2.2.3",
+]
+
+[project.optional-dependencies]
+dev = ["black", "flake8"]

@@ -6,7 +6,18 @@ services:
       - .env
     volumes:
       - ./data/cochrane:/data/cochrane
-
+  robin_evaluation:
+    build:
+      context: ./robin_evaluation
+    env_file:
+      - .env
+    volumes:
+      - ./data/evaluation:/data/evaluation
+      - ./data/output:/data/output
+      - D:\biomedical-datasets\pmc-collection\raw\retrieved:/data/pmc
+      - ./robin_evaluation/src:/app/
+    external_links:
+      - chatbot_api
   chatbot_api:
     build:
       context: ./chatbot_api

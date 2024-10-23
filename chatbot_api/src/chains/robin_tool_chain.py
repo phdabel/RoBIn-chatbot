@@ -9,9 +9,12 @@ from pydantic import PrivateAttr
 class LinearClassifierTool(BaseTool):
 
     name: str = "RoBIn Classifier"
-    description: str = """A linear classifier for risk of bias inference task. Use this tool 
-        when asked to assess risk of bias in a clinical study or document. Useful for risk 
-        of bias assessment.
+    description: str = """A linear classifier for risk of bias inference task. ALWAYS use this tool 
+        when asked to evaluate or assess the risk of bias. Useful for risk of bias evaluation/assessment/inference.
+        Use the entire prompt as input to the tool. For instance, if the prompt is
+        "Evaluate the risk of bias in this study. The study is about the effects of a new drug on patients with
+        diabetes.", the input should be "Evaluate the risk of bias in this study. The study is about the effects of a new drug on patients with
+        diabetes.".
         """
     
     _tokenizer: RobertaTokenizer = PrivateAttr()

@@ -10,13 +10,13 @@ app = FastAPI(
 )
 
 @async_retry(max_retries=3, delay=1)
-async def invoke_agent_with_retry(query: str):
+async def invoke_agent_with_retry(query: str, session: str):
     """Retry the agent if a tool fails to run.
 
     This can help when there are intermittent connection issues
     to external APIs.
     """
-    return await robin_rag_agent_executor.ainvoke({"input": query}, config={"configurable": {"session_id": "robin-session"}})
+    return await robin_rag_agent_executor.ainvoke({"input": query}, config={"configurable": {"session_id": session}})
 
 
 @async_retry(max_retries=3, delay=1)
@@ -30,7 +30,7 @@ async def get_status():
 
 @app.post("/robin-rag-agent")
 async def query_robin_agent(query: RoBInQueryInput) -> RoBInQueryOutput:
-    query_response = await invoke_agent_with_retry(query.text)
+    query_response = await invoke_agent_with_retry(query.text, query.session)
     query_response["intermediate_steps"] = [
         str(s) for s in query_response["intermediate_steps"]
     ]
