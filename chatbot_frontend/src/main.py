@@ -1,11 +1,17 @@
 import os
 import requests
 import streamlit as st
+import secrets
+
 
 CHATBOT_URL = os.getenv("CHATBOT_URL", "http://localhost:8000/robin-rag-agent")
 FILE_CHATBOT_URL = os.getenv("FILE_CHATBOT_URL", "http://localhost:8000/robin-file-agent")
 
+if 'session_id' not in st.session_state:
+    st.session_state.session_id = secrets.token_urlsafe(16)
+
 with st.sidebar:
+    st.header("RoBIn Chatbot")
     st.header("About")
     st.markdown(
         """
@@ -57,7 +63,7 @@ for message in st.session_state.messages:
                 st.info(message["explanation"])
 
 prompt = st.chat_input("What do you want to know?")
-uploaded_file = st.file_uploader("Upload a file", type=["txt"])
+uploaded_file = st.file_uploader("Upload an article in plain text", type=["txt"])
 
 if prompt:
 
@@ -65,7 +71,7 @@ if prompt:
 
     st.session_state.messages.append({"role": "user", "output": prompt})
 
-    data = {"text": prompt, "session": "robin"}
+    data = {"text": prompt, "session": st.session_state.session_id}
 
     with st.spinner("Searching for an answer..."):
         if uploaded_file is not None:
