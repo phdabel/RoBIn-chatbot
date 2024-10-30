@@ -46,7 +46,7 @@ class FileQAChain(Chain):
             # texts = text_splitter.split_text(document)
             # texts = text_splitter.create_documents(texts)
 
-            text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100, add_start_index=True)
+            text_splitter = RecursiveCharacterTextSplitter(chunk_size=512, chunk_overlap=32, add_start_index=True)
             texts = text_splitter.create_documents([document])
             
             # text_splitter = SemanticChunker(embeddings=self._embeddings, number_of_chunks=100)
@@ -55,15 +55,16 @@ class FileQAChain(Chain):
             db = Chroma.from_documents(documents=texts, embedding=self._embeddings)#, persist_directory=os.getenv('CHROMA_DB_PATH'))
             qa_chain = MultiQueryRetriever.from_llm(
                 llm=self._llm_model,
-                retriever=db.as_retriever(k=16)
+                retriever=db.as_retriever(k=10)
             )
+
             # qa_chain = RetrievalQA.from_chain_type(llm=self._llm_model,
             #                                        chain_type="stuff",
             #                                        retriever=db.as_retriever(k=100))
             
             answer = qa_chain.invoke(query_text)
             answers = {doc.metadata['start_index']: doc.page_content for doc in answer}
-            context = "\n".join([answers[i] for i in sorted(answers.keys())])
+            context = "\n".join([answers[i] for i in list(answers.keys())])
             prompt = f"""Given the context of the provided file, answer the question and follow the instructions provided by the user.
 Be as detailed as possible and do no make assumptions about the context. If you are unsure about the answer, please state so.
 
@@ -103,5 +104,4 @@ else:
                       base_url=os.getenv('OLLAMA_BASE_URL', default='http://localhost:11434'))
 
 file_qa_chain = FileQAChain(llm_model=model, embeddings=embeddings)
-
     

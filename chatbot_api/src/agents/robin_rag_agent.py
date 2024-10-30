@@ -16,7 +16,7 @@ from langchain import hub
 # from chatbot_api.src.chains.review_study_chain import reviews_vector_chain
 # from chatbot_api.src.chains.pubmed_article_chain import article_retrieval_chain
 
-from memory.BaseMemory import ModifiedConversationBufferMemory
+# from memory.BaseMemory import ModifiedConversationBufferMemory
 from chains.cochrane_cypher_chain import cochrane_cypher_chain
 from chains.review_study_chain import reviews_vector_chain
 from chains.pubmed_article_chain import article_retrieval_chain
@@ -114,15 +114,16 @@ Final Answer: [your response here]
 
 Begin!
 
-Previous conversation history:
-{chat_history}
-
 New input: {input}
 
 {agent_scratchpad}
 """
 
-robin_agent_prompt = PromptTemplate(input_variables=['input', 'chat_history'], template=robin_agent_prompt_template)
+# add Chat history:
+# {chat_history} to the prompt if using memory
+
+robin_agent_prompt = PromptTemplate(input_variables=['input'], # add 'chat_history' to input_variables if using memory
+                                    template=robin_agent_prompt_template)
 
 
 # robin_agent_prompt = hub.pull("hwchase17/react-chat")
@@ -143,7 +144,7 @@ else:
         temperature=0,
     )
 
-memory = ModifiedConversationBufferMemory(memory_key="chat_history", output_key="output", input_key="input", max_length=3, return_messages=True)
+# memory = ModifiedConversationBufferMemory(memory_key="chat_history", output_key="output", input_key="input", max_length=3, return_messages=True)
 
 robin_rag_agent = create_react_agent(
     model,
@@ -156,7 +157,6 @@ robin_rag_agent_executor = AgentExecutor(
     tools=tools,
     handle_parsing_errors=True,
     return_intermediate_steps=True,
-    memory=memory,
     verbose=True
 )
 

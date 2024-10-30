@@ -24,7 +24,7 @@ for i, row in rob_dataset.iterrows():
         continue
 
     data = {
-        'query_text': 'Evaluate the risk of bias concerning allocation concealment.'
+        'query_text': row['question']
     }
     file = {'uploaded_file': (row['filename'], open(filepath, 'rb'))}
     req = requests.post(BASE_URL + FILE_ENDPOINT, files=file, params=data, verify=False)
@@ -38,8 +38,9 @@ for i, row in rob_dataset.iterrows():
         'ground_truth': row['label'],
         'intermediate_steps': resp['answer']['intermediate_steps']
     }
+
     with open(ROB_EVALUATION_OUTPUT + 'evaluation_' + str(row['index']) + '.json', 'w') as f:
         json.dump(result, f, indent=4)
-    time.sleep(1)
-    if i > 9:
+
+    if i > 5:
         break

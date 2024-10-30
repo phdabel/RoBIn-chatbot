@@ -1,0 +1,311 @@
+
+==== Front
+Pilot Feasibility StudPilot Feasibility StudPilot and Feasibility Studies2055-5784BioMed Central London 10810.1186/s40814-016-0108-5Study ProtocolTrial of Optimal Personalised Care After Treatment for Gynaecological cancer (TOPCAT-G): a study protocol for a randomised feasibility trial Pye Kirstie k.pye@bangor.ac.uk 1Totton Nicola n.totton@bangor.ac.uk 1Stuart Nicholas Nick.Stuart@wales.nhs.uk 2Whitaker Rhiannon Rhiannon@whitres.co.uk 3Morrison Val v.morrison@bangor.ac.uk 4Edwards Rhiannon Tudor r.t.edwards@bangor.ac.uk 5Yeo Seow Tien s.t.yeo@bangor.ac.uk 5Timmis Laura J. l.j.timmis@bangor.ac.uk 5Butterworth Caryl Caryl.Butterworth@wales.nhs.uk 2Hall Liz Liz.Hall@wales.nhs.uk 2Rai Tekendra t.rai@bangor.ac.uk 1Hoare Zoe z.hoare@bangor.ac.uk 1Neal Richard D. R.D.Neal@leeds.ac.uk 6Wilkinson Clare c.wilkinson@bangor.ac.uk 7Leeson Simon +44 (0) 1248 384954linandsie@googlemail.com 21 North Wales Organisation for Randomised Trials in Health (NWORTH), IMSCaR, COHABS, Bangor University, Bangor, UK 2 Betsi Cadwaladr University Health Board, Bangor, UK 3 Whitaker Research Ltd., Bangor, UK 4 School of Psychology, COHABS, Bangor University, Bangor, UK 5 Centre for Health Economics and Medicines Evaluation, IMSCaR, COHABS, Bangor University, Bangor, UK 6 Leeds Institute of Health Sciences, University of Leeds, Leeds, UK 7 North Wales Centre for Primary Care Research, COHABS, Bangor University, Bangor, UK 23 11 2016 23 11 2016 2016 2 6729 4 2016 8 11 2016 © The Author(s). 2016
+Open AccessThis article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.Background
+Gynaecological cancers are diagnosed in over 1000 women in Wales every year. We estimate that this is costing the National Health Service (NHS) in excess of £1 million per annum for routine follow-up appointments alone. Follow-up care is not evidence-based, and there are no definitive guidelines from The National Institute for Health and Care Excellence (NICE) for the type of follow-up that should be delivered. Standard care is to provide a regular medical review of the patient in a hospital-based outpatient clinic for a minimum of 5 years. This study is to evaluate the feasibility of a proposed alternative where the patients are delivered a specialist nurse-led telephone intervention known as Optimal Personalised Care After Treatment for Gynaecological cancer (OPCAT-G), which comprised of a protocol-based patient education, patient empowerment and structured needs assessment.
+
+Methods
+The study will recruit female patients who have completed treatment for cervical, endometrial, epithelial ovarian or vulval cancer within the previous 3 months in Betsi Cadwaladr University Health Board (BCUHB) in North Wales. Following recruitment, participants will be randomised to one of two arms in the trial (standard care or OPCAT-G intervention). The primary outcomes for the trial are patient recruitment and attrition rates, and the secondary outcomes are quality of life, health status and capability, using the EORTC QLQ-C30, EQ-5D-3L and ICECAP-A measures. Additionally, a client service receipt inventory (CSRI) will be collected in order to pilot an economic evaluation.
+
+Discussion
+The results from this feasibility study will be used to inform a fully powered randomised controlled trial to evaluate the difference between standard care and the OPCAT-G intervention.
+
+Trial registration
+
+ISRCTN45565436.
+
+Keywords
+Gynaecological cancer follow-upNurse-led telephone interventionFeasibilityRandomised controlled trialQuality of lifeBetsi Cadwaladr University Health Boardissue-copyright-statement© The Author(s) 2016
+==== Body
+Background
+In the UK, gynaecological cancers including endometrial (c. 8500 per year), ovarian (c. 7000 per year), cervical (c. 3000 per year) and vulval (c. 1200 per year) cancer are retrospectively the fourth, fifth, twelfth, and twentieth most common cancer sites in women [1–4]. Over 1000 females are diagnosed and treated with gynaecological cancers each year in Wales (ovarian = 365, uterine = 539, cervical = 164) [5]. Three North Wales hospitals comprising Betsi Cadwaladr University Health Board (BCUHB) (Ysbyty Gwynedd, Ysbyty Glan Clwyd, and Ysbyty Maelor) serve a population of approximately 678,000 people [6], with 92 ovarian cancer, 107 endometrial cancer and 35 cervical cancer newly diagnosed in 2014 [7].
+
+Aims of follow-up
+The aims of follow-up care include the management of patients’ physical and psychological morbidity and the prevention or early detection of local recurrence, distant metastases or appearance of second cancers [8, 9]. Follow-up care is routine for women who have completed treatment for gynaecological cancer but is not evidence-based. Currently, there is no agreement as to what follow-up care is effective, and there are no guidelines from The National Institute for Health and Care Excellence (NICE) as to what form or frequency of follow-up is appropriate after treatment for gynaecological cancer.
+
+Standard approach to follow-up
+Following completion of treatment for gynaecological cancer, the traditional medical practice is to regularly review the patient in a hospital-based, outpatient clinic over a period of years. These regular reviews occur according to a locally or regionally agreed schedule for at least 5 years after completion of treatment. In addition to clinical review, patients may have blood tests, scans or other tests as required. Multiple unproven assumptions lie behind this standard approach to gynaecological cancer follow-up; one being that it will benefit the patient by detecting recurrence early, thus allowing effective treatment and improving survival, or alternatively will offer reassurance to the patient that all is well. There is however little evidence to support this approach. In general, early detection of recurrence is unlikely to improve survival if there is no intervention capable of producing a cure [10]. For the majority of gynaecological cancers, any treatment for recurrence is palliative and not curative. Whilst a few retrospective studies suggest that survival was improved when recurrent cervical or endometrial cancer was detected at routine follow-up rather than when symptoms develop [11–13], the majority of patients relapse with symptoms that would prompt reassessment even if the patient was not on routine review [14–17]. A randomised controlled trial (RCT) in ovarian cancer that assessed the value of detecting relapse early by using serum CA125 measurements as part of routine follow-up confirmed that whilst the test was able to detect pre-symptomatic recurrence, this did not lead to any survival benefit. It did however lead to an inferior quality of life due to further chemotherapy provision and more treatment-related morbidity [18]. This study again raises doubts about the value of detecting pre-symptomatic recurrence.
+
+Patients may also receive false reassurance (when follow-up finds ‘no symptoms’) or they may wait for their next routine appointment to disclose symptoms [19] thus possibly delaying detection and appropriate symptom management. Furthermore, there is evidence that hospital-based, medical follow-up fails to address many of the broader needs that patients have following treatment for gynaecological cancers. Patients commonly report problems with anxiety and depression [20] and reduced health-related quality of life (QoL) [21], with specific problems including the physical effects of treatment such as distressing disturbance of bowel and bladder function, sexual relations and relationships, psychological health and employment problems [22, 23]. These issues are reflected in studies of patient-expressed needs. Female cancer patients tend to express more needs than male cancer patients and report less satisfaction with support generally [24, 25]. Gynaecological cancer patients have reported a high level of need for detailed information, information regarding how best to recover from surgery or to avoid recurrence and information regarding physiological and psychological issues [24, 26, 27]. There is evidence that doctors in routine follow-up clinics often fail to identify such problems and, if they do, they fail to address them effectively [28, 29].
+
+Finally, the standard approach to follow-up burdens the health service with significant costs and challenges. The increasing numbers of patients who have received treatment for gynaecological cancer in conjunction with rising survival rates mean that the number of patients on follow-up is rising. A significant amount of medical, nursing and administrative time is spent on arranging and undertaking potentially unnecessary medical reviews. The unit cost for a non-admitted consultant-led, face-to-face, follow-up appointment in gynaecology oncology for the year 2014–2015 was £168 [30]. We estimate that in Wales, the National Health Service (NHS) cost of these routine follow-up appointments, excluding the cost of any tests ordered, is in excess of £1 million per annum based on current survival rates and national follow-up policies. This is in addition to any societal costs such as time taken from work to attend clinics and additional childcare costs.
+
+Alternative approaches to follow-up
+In response to these challenges, a range of additional, alternative or supplementary approaches have been developed. These include risk-stratified care pathways, nurse-led clinics, telephone follow-up, reduced frequency of follow-up and remote surveillance strategies where biomarker or radiological follow-up is key. The National Cancer Survivorship Initiative [31] recommends a stratified approach to cancer follow-up care as opposed to the current traditional pathway. The NHS in England is piloting this risk-stratified approach that divides cancer patients into three groups: complex and requiring continued hospital care; shared care, for patients that require hospital care supplemented by education and support; and a self-care group that can be discharged from routine hospital follow-up [32]. However, the criteria for these groups are not yet fully defined and neither is the proportion of patients that will fall into each. Furthermore, there is as yet no evidence that this approach is superior to standard care or is the best alternative. We have recently undertaken a national survey of clinical practice in follow-up in all gynaecological cancers [33] which reported that a wide range of follow-up approaches are used across the UK despite there being little evidence that they lead to better outcomes for patients or are more cost-effective. Although the networks reported a wide range of practice in relation to tests and frequency of review, the survey confirmed that hospital-based, medical review remains the standard approach. A minority used nurse-led or telephone follow-up, and general practitioners (GPs) were rarely involved in routine care.
+
+We propose an approach that aims to provide nurse-led telephone follow-up care for patients. Investigations into patterns of post-treatment cancer follow-up should assess recovery from treatment toxicity and social and psychological rehabilitation as well as health economics and the detection of relapse. Care should also be individualised so that patients can have the information they need as well as having their individual problems identified and managed. There is a pressing need for the NHS to develop patterns of care for patients who have had treatment for cancer that will address their needs, maximise their QoL and allow timely diagnosis of relapse yet uses NHS resources in a cost-effective manner. It is also important to convince patients, doctors and health service managers that this new approach can be adopted without any adverse effect on survival of patients.
+
+Purpose and scope
+This study will evaluate the feasibility of a nurse-led needs assessment in the gynaecology cancer setting in North Wales and its utility to health care professionals when making decisions about supportive care, compared to disease- and site-matched patients not receiving the nurse-led needs assessment. The nurse-led intervention will be known as Optimal Personalised Care After Treatment for Gynaecological cancer (OPCAT-G) and will comprise patient education, patient empowerment and protocol-based, structured needs assessment undertaken with Gynae Oncology clinical nurse specialists (CNSs) by telephone. Patients will receive an initial structured telephone interview with a gynaecological CNS and a booklet including information on symptoms of recurrence and possible long-term physical and psychological side-effects of treatment. Information will also be given to patients on how they can contact the clinical team if they have concerns or symptoms; otherwise, they will receive routine telephone contact 6 months later. The telephone follow-up will involve a structured interview whereby patients’ unmet needs will be identified and patients will receive appropriate referral(s). The new approach will maintain regular contact with patients but will not involve routine hospital, outpatient attendance. The aim of this follow-up programme is to manage any long-term effects from treatment, to reassure the patient that the cancer remains in remission and if relapse occurs, to detect and treat it early.
+
+This protocol falls within a larger body of work which includes a national survey relating to current practice of follow-up for gynaecological cancer patients in the UK [30], a BCUHB wide audit (headed by SL) of gynaecological cancer patients to establish key parameters in relation to recurrence and a small feasibility trial of a short-form needs assessment tool developed by one co-author (VM) and colleagues. Funding from Tenovus Cancer Care has been received for a Ph.D. student (LT, supervised by RTE, NS, VM) to explore work relating to patient and caregivers’ perspectives and preferences for different models of follow-up care [34]. Finally, we are currently conducting a systematic literature review to provide an up-to-date evaluation of the available evidence for the different strategies of follow-up after endometrial and vulval cancer. This body of work aims to show the wide applicability of the proposed intervention, whilst using this study as an exemplar of the methodology.
+
+This study will focus on gynaecological cancer but will link with similar studies being developed in North Wales that will look at other exemplars, particularly prostate cancer (TOPCAT-P; ISRCTN34516019). The studies will be independent but will share expertise and co-investigators to develop a body of expertise relating the clinical research in this area.
+
+Methods/design
+Aim
+The primary aim of the current study is to evaluate the feasibility of conducting a randomised trial comparing nurse-led telephone follow-up with standard, hospital-based, medical follow-up. Feasibility will be determined by the ability to recruit and retain patients to the study the ability to collect regular data and to evaluate the acceptability of implementing this new intervention.
+
+The secondary aim of this feasibility study is to gain knowledge of standard deviations and effect sizes on the study outcome measures to inform the power calculation for a future full trial.
+
+The final aim is to pilot the statistical and health economics analysis that would be required within a future full trial that will ultimately determine the effectiveness and cost-effectiveness of the new nurse-led telephone follow-up approach.
+
+Design
+The current study will be a parallel-group randomised controlled feasibility trial design comparing nurse-led intervention (treatment group) with standard care (control group) to assess recruitment and retention rates and acceptability of randomisation and to inform the sample size calculation for a future trial.
+
+Participants
+Inclusion criteria
+We propose to recruit a cohort of female patients who have completed treatment for cervical, endometrial, epithelial ovarian, or vulval cancer within the last 3 months in BCUHB in North Wales. Patients who have completed treatment for fallopian tube and primary peritoneal carcinoma will also be included. The cohort will be identified through the regional gynaecological cancer multidisciplinary team meeting (MDT) records and will consist of patients who are considered fit for taking part in the trial and able to give informed consent, as assessed by the MDT. Patients may have received surgery, chemotherapy, radiotherapy or a combination of these. At the time of entry, patients in the view of their treating consultant will not have a definite need for continued hospital-based care.
+
+Exclusion criteria
+Patients having had treatment for sarcoma, germ cell tumour, borderline tumours or choriocarcinoma will be excluded as these women tend to require specific and/or more intense follow-up often with serial imaging or tumour markers. Patients requiring ongoing treatment will also not be included in the study. The study will not include patients who do not have the capacity to give informed consent or who are deemed to be unable to take part in the trial (e.g. severe learning/mental disability, severe mental health problems). Patients who are not able to understand Welsh or English will also be excluded.
+
+Sample size
+We estimate 30% will not fit the inclusion criteria whilst an unknown proportion of the remainder will not enter the study, either through not wishing to consent or for other reasons. The extent of patient acceptability is unknown but for planning purposes, we will assume 50% acceptance. Assuming a throughput of approximately 150 newly diagnosed cases, we hope to randomise 50 participants from the recruiting centres into the study during a period of 6 months. It is thought this would be sufficient to inform a sample size of a future full trial [35] and enable a reasonably diverse group to fully assess the acceptability of the trial.
+
+Recruitment
+All patients will be recruited from three hospitals in the North Wales Cancer Network: Ysbyty Gwynedd, Ysbyty Glan Clwyd, and Ysbyty Maelor. The research nurse and three clinical nurse specialists (CNSs) will identify women from the hospital databases, in line with the inclusion and exclusion criteria above. Eligible patients will be approached by the clinic medical team and/or by the research nurse/CNS and will be invited to take part in the study. Patients will be given a participant information sheet at their end-of-treatment visit and will have until their follow-up appointment to consider the study (usually around 6 weeks), and those who would like to participate will have the opportunity to contact the research nurse by phone or email for more information before their follow-up appointment. Patients will be informed that if they agree to participate, they will be randomly assigned to one of the two treatment groups, both receiving slightly different modes of follow-up support. After agreeing to take part in the study, patients will give written consent at their 3-month routine follow-up appointment.
+
+Randomisation
+Following their 3-month appointment, consenting patients will complete the baseline measures (see below) then be randomised at the end of the 3-month review appointment. Patients will be randomised on a 1:1 ratio by the North Wales Organisation for Randomised Trials in Health (NWORTH) using a dynamic, independent, secure, web-based, randomisation procedure that can be accessed 24 h a day [36]. Patients will be randomised to one of the two arms of the study: standard care or nurse-led intervention. Site and disease type will be included as stratification variables. The participants, research nurse, CNSs and trial management will be unblinded during this trial. All other members of the team, especially the trial statistician, will remain blinded.
+
+Standard care
+After patients have been allocated to the standard care arm of the study, they will be informed about the next part of the study and their 6- and 9-month appointments scheduled. Patients randomised to standard care will continue to have their usual hospital-based doctor-led medical reviews (at 6 and 9 months post-treatment conclusion) and will be followed up according to an agreed protocol with the regional gynaecological cancer MDT and representing current practice. This will include an agreed protocol on further blood tests and scans if considered appropriate to routine follow-up.
+
+In addition to their usual follow-up appointments, patients will be asked to complete a set of outcome questionnaires at baseline (following consent, but prior to randomisation), with assistance from the research nurse or CNS at the 3-month follow-up appointment. Patients will then be asked to complete the same set of outcome measures at the end of each of their follow-up appointments. If this is not possible, then the research nurse will send the questionnaires by post for completion and return in a self-addressed, pre-stamped envelope.
+
+Nurse-led intervention
+Patients in the intervention group will not attend the hospital for their usual follow-up appointments but will receive a nurse-led telephone follow-up intervention, known as Optimal Personalised Care After Treatment for Gynaecological cancer (OPCAT-G). After patients have been allocated to the nurse-led intervention arm of the study, the research nurse or CNS will inform patients of their allocation. The CNS will give the patients an information booklet at the end of their 3-month medical review and will guide the patient through the sections of the booklet. The information booklet will include information on patterns of relapse, possible warning symptoms and how to respond to these. Information will also be given on possible long-term physical and psychological side-effects of treatment and how these can be managed. Information will also be given to patients on how they can contact the clinical team if they have concerns or symptoms. Patients will receive treatment and diagnosis-specific supplementary leaflets attached to the booklet. The CNS will also give patients a set of needs assessment measures, including:Macmillan Concerns Checklist [37]
+
+The Macmillan Concerns Checklist addresses 23 physical concerns; 9 practical concerns; 3 family/relationship concerns; 9 emotional concerns; 3 spiritual or religious concerns; and 9 lifestyle or information needs. Patients are asked to tick a box for any problems that have caused concern during the previous week or to leave the box blank if it does not apply to them.
+
+CancerCAN-22 [24, 38, 39]
+
+This is a multi-domain needs assessment tool that measures unmet needs across 22 items (12 psychosocial needs items and 10 treatment and care items). Items are either met, unmet or never had/not applicable; then scored for salience if unmet on a 0–3 Likert scale (no importance, low importance, medium importance and high importance).
+
+Distress thermometer
+
+This is a reliable measure of patients’ distress and concerns and is widely used in cancer studies [40]. It has accepted cut-offs indicative of clinical levels of global distress.
+
+
+
+
+Patients will be asked to complete the needs assessment measures prior to a scheduled telephone call from the CNS. Patients will receive a scheduled telephone call within 4 weeks of randomisation and will be notified of their scheduled telephone call date and time at the end of their 3-month medical review. Patients will also receive a letter confirming the date and time of their scheduled telephone call.
+
+The scheduled telephone call will involve a structured interview with the CNS. Patients will be asked about their general wellbeing and about any gynaecological symptoms experienced. Any identified needs or concerns from the three needs assessment measures will be discussed. Patients in whom problems or unmet needs are identified will be evaluated and directed to the most appropriate source of help. This could include a patient self-help group, their general practitioner, or hospital review by the gynaecology, oncology or clinical psychology team. These additional appointments would be facilitated by the CNS who would ensure appropriate communication regarding the reasons for referral. This information, including advice and follow-up suggestions, will be recorded using a case note sheet. Patients referred for further hospital review will be discharged to continue telephone review once their immediate problem has been assessed and treated or resolved. Patients will receive additional copies of the needs assessment measures by post. Patients will be told that if they have any problems between telephone calls, they should complete their assessments and contact the CNS. Patients will be encouraged to report problems promptly with these concerns addressed in the same structured way.
+
+Patients will then receive another scheduled telephone call at 9 months post-treatment. Patients will receive a letter confirming the date and time of their telephone call appointment by post. Patients will also receive the three needs assessment measures by post and will be asked to complete them prior to their scheduled telephone call from the nurse. The telephone contact will again include a structured interview and any identified needs or concerns will be discussed following the same structure of the first telephone call interview.
+
+In addition to the nurse-led intervention, patients will be asked to complete the same set of outcome questionnaires as patients in the standard care arm. The outcome questionnaires will be completed at baseline (prior to randomisation) with assistance from the research nurse or CNS at the 3-month follow-up appointment. Patients will receive the same set of outcome questionnaires by post at 6 months post-treatment and within a week of their 9-month telephone follow-up and will be asked to return them in a self-addressed, pre-stamped envelope.
+
+For this study, we will consider the study endpoint to be the 9 months post-treatment data collection. After the 9-month data collection point, the intervention and control arm patients will continue with follow-up care as the clinician advises and is available to the local service.
+
+CONSORT Diagram
+The CONSORT Diagram, which will be used to illustrate recruitment and loss during the study, can be found in Fig. 1. For a further detailed breakdown of the patient involvement in the study, Fig. 2 shows the SPIRIT flowchart of the trial.Fig. 1 CONSORT Diagram for TOPCAT-G feasibility study
+
+
+Fig. 2 CONSORT Diagram for TOPCAT-G feasibility study
+
+
+
+
+Measures
+Primary outcome measures
+The primary outcome measures of the feasibility trial will be:Patient recruitment rate
+
+This will be calculated from the total number of eligible patients invited to take part in the study and the number of patients giving written consent to participate in the study.
+
+Patient attrition rate
+
+This will be calculated from the number of patients who gave written consent and the number of patients who have completed any measures, regardless of their completion rate.
+
+
+
+
+Secondary outcome measures
+A single booklet of outcome questionnaires will be provided to all trial participants at baseline and 6 and 9 months post-treatment. These are as follows:EORTC QLQ-C30
+
+This is a validated measure to assess the quality of life of cancer patients [41]. It comprises a 30-item questionnaire incorporating five functional scales (physical, role, cognitive, emotional and social), three symptom scales (fatigue, pain and nausea and vomiting), a global health status/quality of life scale and a number of single items assessing additional symptoms commonly reported by cancer patients and perceived financial impact of the disease.
+
+EQ-5D-3L
+
+This is a validated generic, health-related, preference-based measure comprising five domains: mobility, self-care, usual activities, pain and discomfort and anxiety and depression. Each domain has three levels (no problems, some problems and a lot of problems). The EQ-5D-3L scoring system defines 243 possible health states. The questions are complemented by a visual analogue scale (VAS), on which respondents are asked to indicate their current health [42].
+
+ICECAP-A (ICEpop CAPability measure for Adults)
+
+This is a measure of capability for the general adult population [43]. The ICECAP-A covers five attributes of wellbeing: attachment, stability, achievement, enjoyment and autonomy.
+
+Client Service Receipt Inventory (CSRI)
+
+This is an adapted version of a standardised measure using self-report service user data to evaluate and cost service use, including all GP visits and unscheduled secondary care in both arms of the study [44, 45].
+
+
+
+
+Additional data to be captured will include the following:e) Patient demographics, cancer type and stage, type of treatment received and co-morbidity at baseline (from medical records and patient confirmation).
+
+f) Data on the pattern, timing and method of detection of relapse and on survival (recorded using a Serious Adverse Events form).
+
+
+
+
+We anticipate that on average patients would complete all questionnaires in about 20 min on each occasion.
+
+The number of patients offered the study will be logged to identify the proportion of patients that decline to take part. Patients who decline to consent will be asked if they would be willing to provide any reason(s) why they preferred not to take part.
+
+Data will aim to be collected from all willing participants, even in the case of a withdrawal or non-compliance with the intervention.
+
+Data collection/storage
+Data collection, cleaning and analysis will be undertaken by NWORTH using standard, secure, anonymous procedures for handling patient data. The fully auditable MACRO data management system will be used to ensure best practice. The health economics and patients’ demographic data will be transferred from NWORTH to CHEME (Centre for Health Economics and Medicines Evaluation) for further analysis.
+
+Statistical methods
+Descriptive statistics will be reported, including clinical and demographic characteristics of those recruited. To assess the feasibility of a full RCT, the recruitment and retention rates will be calculated. A future full RCT will be considered feasible if the recruitment rate is at least 50% and retention rate is no less than 50%. Additionally, the patient eligibility rate and questionnaire completion rates will be calculated to provide further evidence for the appropriateness of a full trial and associated measures.
+
+Exploratory analysis will also be conducted around the assessments of QoL with the purpose of estimating key parameters for powering the main RCT but not to provide definitive results for the study. Effect sizes of the differences in final scores calculated from the EORTC QLQ-C30 will be calculated between the groups as randomised for the study endpoint. The effect size will be used to inform future sample size calculations for a larger, multi-centre RCT.
+
+Health economics
+An exploratory health economic analysis will be conducted to assess the feasibility of answering the required research questions within a full RCT, but not to provide definitive results for the study at this stage. Descriptive statistics will be performed to assess the responses of the self-reported health service use, EQ-5D-3L and ICECAP-A and the level of completeness for EQ-5D-3L and ICECAP-A in both arms of the study; this will allow us to explore as to how well the self-administered questionnaires perform in this patient population group. The strength of the relationship between EQ-5D-3L index score and ICECAP-A score will be explored using Pearson’s Product Moment Correlation Coefficient. An exploratory cost-effectiveness analysis will be undertaken from a multi-agency perspective to explore the cost-effectiveness of a ‘nurse-led’ intervention compared to standard care; this will help power economic analysis alongside a future full trial.
+
+Trial management plan
+A trial working group (WG) consisting of individuals responsible for the effective day-to-day running of the trial will meet on a monthly basis. The WG will be chaired by the chief investigator (CI). The WG will report regularly to the steering group (SG) to highlight any areas of difficulty.
+
+The trial will be managed by a SG, chaired by one of the co-applicants. The SG will meet at least three times per year to oversee the overall running of the trial and to ensure timely progress with trial development, implementation and reporting. It will comprise the CI and co-applicants.
+
+Two patient representatives from the North Wales Cancer Forum Group will be invited to attend SG meetings in order to contribute to discussions regarding study recruitment methods and materials, including the patient information sheets and consent materials and the intervention protocol. This group will also benefit the project team in terms of advising as to the appropriate interpretation and dissemination of findings and to how best take forward the findings into development of the ensuing RCT protocol.
+
+A Data Monitoring and Ethics Committee (DMEC) will independently monitor the data and quality assurance of the study. This will consists of an independent chair, statistician and expert in the field.
+
+Day-to-day running and co-ordination of the trial will be undertaken by an appropriately experienced research officer employed by NWORTH. This work will be supported by the research nurse, a new appointment arising from the collaboration between Health and Care Research Wales and BCUHB to support the portfolio of such studies within BCUHB. Both organisations have well-developed research governance procedures and have joint standard operating procedures (SOPs) for research. All research staff will receive Good Clinical Practice training, SOP training and any further task-specific training identified. Full training details will be maintained in individual staff training matrices as per SOP.
+
+Reports and dissemination
+Findings from this study will be presented via posters and oral presentations at regional and national meetings where oncology doctors, specialist nurses and health service managers would be present. This would include specialist meetings relating to gynaecological oncology, medical oncology, health psychology/psycho-oncology and health economics.
+
+Papers will be submitted to relevant international journals such as International Journal of Gynecological Oncology, British Journal of Obstetrics and Gynaecology, Lancet Oncology and British Journal of Cancer.
+
+Preparation of the protocol for a national randomised, multi-centre trial comparing OPCAT-G with standard care would be a key output from this work. Publications are also expected from the work of the Tenovus Ph.D. student regarding patients, carers and health care professionals preferences for gynaecological cancer follow-up care.
+
+Discussion
+The TOPCAT-G study will evaluate the feasibility of completing a full, definitive RCT that would assess the potential benefits of nurse-led telephone follow-up for gynaecological cancer patients compared with current follow-up care comprised of regular outpatient appointments. Feasibility for the study will be judged using patient recruitment and attrition rates. The study will also provide indications on the suitability of the outcome measures and will pilot the proposed statistical analysis plan and also a cost-effectiveness analysis plan which would be an essential part of a full RCT. The results found from the feasibility study will also be used to inform the sample size of a future RCT.
+
+A potential operational issue for the study might be in finding an appropriate space for each of the CNSs to complete their telephone follow-ups with the participants. Gaining information on issues such as this will be a vital part of shaping the design of a future RCT. An unknown part of the study is the amount of time each of the telephone follow-ups will take for the CNSs to complete; this will be collected and collated at the end of the feasibility study to help more accurately inform a future RCT.
+
+Trial status
+The TOPCAT-G study started in July 2014, screening began in September 2015 giving a recruitment period of November 2015 to the end of April 2016. Follow-ups will continue until October 2016, and the trial is due to end in January 2017.
+
+Abbreviations
+BCUHBBetsi Cadwaladr University Health Board
+
+CHEMECentre for Health Economics and Medicines Evaluation
+
+CIChief Investigator
+
+CNSClinical nurse specialist
+
+CSRIClient Service Receipt Inventory
+
+EQ-5D-3LEuroQoL-5 dimensions-3 levels
+
+GPGeneral Practitioner
+
+HR-QoLHealth-related quality of Life
+
+ICECAP-AICEpop CAPability measure for Adults
+
+MDTMultidisciplinary team meeting
+
+NHSNational Health Service
+
+NICEThe National Institute for Health and Care Excellence
+
+NISCHR CRCNational Institute for Social Care and Health Research Clinical Research Centre
+
+NSAGNational Strategic Advisory Group
+
+NWORTHNorth Wales Organisation for Randomised Trials in Health
+
+QoLQuality of life
+
+R&DResearch and Development
+
+RCTRandomised controlled trial
+
+SGSteering group
+
+SOPStandard operating procedure
+
+TOPCAT-GTrial of Optimal Personalised Care After Treatment for Gynaecological cancer
+
+TOPCAT-PTrial of Optimal Personalised Care After Treatment for Prostate cancer
+
+VASVisual analogue scale
+
+WGWorking group
+
+Acknowledgements
+The authors would like to thank Jane Evans and Sharon Manning for their roles in patient recruitment and their ongoing support in completing the intervention.
+
+Funding
+The TOPCAT-G study is funded and sponsored by the Betsi Cadwaladr University Health Board (BCUHB), Ysbyty Gwynedd, Penrhosgarnedd Bangor, LL57 2PZ.
+
+Authors’ contributions
+KP contributed to the study design, the trial management (July 2014–October 2015), the preparation and writing of the study protocol and the implementation of the study. NT contributed to the preparation of the study protocol, the statistical analysis and the drafting of the manuscript. NS contributed to the study concept, the study design, the development of the intervention, the preparation of the study protocol and the review of the manuscript. RhW is a patient representative and contributed to the study funding, the study concept, the study design, the development of the intervention, the preparation of study protocol and the review of manuscript. VM contributed to the study design, the development of the intervention, the preparation of the study protocol, the health psychology oversight and the review of manuscript. RTE contributed to the study design, the development of the intervention, the preparation of the study protocol, the health economic oversight, the review of the manuscript. STY contributed to the preparation of the study protocol, the health economic analysis, and the review of the manuscript. LJT is a Tenovus Ph.D. student and contributed to the preparation of the study protocol and the review of the manuscript. CB: Preparation of study protocol, recruitment and screening of participants, data collection, review of manuscript. LH contributed to the preparation of the study protocol, the recruitment and screening of the participants, the implementation of the intervention, the data collection and the review of the manuscript. TR contributed to the trial management (October 2015–March 2016), the preparation of the study protocol and the review of the manuscript. ZH contributed to the statistical oversight and the review of the manuscript. RDN contributed to the study design, the preparation of the study protocol and the review of the manuscript. CW contributed to the study design, the preparation of the study protocol and the review of the manuscript. SL is chief investigator and contributed to the study concept, the study design, the development of the intervention, the preparation of the study protocol, the study oversight and the review of the manuscript. All authors read and approved the final manuscript.
+
+Competing interests
+The authors declare that they have no competing interests.
+
+Consent for publication
+Not applicable
+
+Ethics approval and consent to participate
+Ethical approval was granted by NRES Committee London - South East on the 22nd of May 2015 (Ref: 15/LO/0716, IRAS number: 167879). R&D (Research and Development) was submitted for approval on the 2nd of June 2015 and granted on the 26th of August 2015 by the R&D internal panel board, Betsi Cadwaladr University Health Board. All protocol amendments will be re-submitted for approval.
+
+Protocol version
+This paper is from protocol V2 dated 2 July 2015.
+==== Refs
+References
+1. Cervical Cancer Statistics, Cancer Research UK. Retrieved from: http://www.cancerresearchuk.org/cancer-info/cancerstats/types/cervix/. Accessed 11 Aug 2014.
+2. Uterine Cancer Statistics, Cancer Research UK. Retrieved from http://www.cancerresearchuk.org/cancer-info/cancerstats/types/uterus/. Accessed 11 Aug 2014.
+3. Ovarian Cancer Statistics, Cancer Research UK. Retrieved from http://www.cancerresearchuk.org/cancer-info/cancerstats/types/ovary/. Accessed 11 Aug 2014.
+4. Vulval Cancer Statistics, Cancer Research UK. Retrieved from http://www.cancerresearchuk.org/cancer-info/cancerstats/types/vulva/. Accessed 11 Aug 2014.
+5. Cancer in Wales, Welsh Cancer Intelligence and Surveillance Unit. Retrieved from http://www.wcisu.wales.nhs.uk/cancer-statistics. Accessed 23 Feb 2016.
+6. Betsi Cadwaladr University Health Board. Retrieved from http://www.wales.nhs.uk/sitesplus/861/page/84723. Accessed 6 Apr 2016.
+7. Incidence Trends 2001 - 2014, Welsh Cancer Intelligence and Surveillance Unit. Retrieved from http://www.wcisu.wales.nhs.uk/officical-statistics-exel-files-of-trend. Accessed 25 Oct 2015.
+8. Follow-up Care After Cancer Treatment, National Cancer Institute. Retrieved from http://www.cancer.gov/about-cancer/coping/survivorship/follow-up-care/follow-up-fact-sheet. Accessed 9 May 2010.
+9. The Royal Society of Medicine Press. Management of gynaecological cancer. Effect Health Care Bulletin. 1999;5(3) ISSN: 0965-0288.
+10. Kew F  Galaal K  Bryant A  Naik R   Evaluation of follow-up strategies for patients with epithelial ovarian cancer following completion of primary treatment Cochrane Database Syst Rev 2011 6 CD006119 
+11. Bodurka-Bevers D  Morris M  Eifel PJ  Levenback C  Bevers MW  Lucas KR    Posttherapy surveillance of women with cervical cancer: an outcomes analysis Gynecol Oncol 2000 78 187 193 10.1006/gyno.2000.5860 10926801 
+12. Carrara L  Gadducci A  Landoni F    Could different follow-up modalities play a role in the diagnosis of asymptomatic endometrial cancer relapses?: an Italian multicentric retrospective analysis Int J Gynecol Cancer 2012 22 6 1013 1019 10.1097/IGC.0b013e31825ad3ee 22706226 
+13. Ueda Y  Enomoto T  Egawa-Takata T  Miyatake T  Yoshino K  Fujita M    Endometrial carcinoma: better prognosis for asymptomatic recurrences than for symptomatic cases found by routine follow-up Int J ClinOncol 2010 15 4 406 412 
+14. Ansink A  de Barros LA  Naik R  Monaghan JM   Recurrent stage IB cervical carcinoma: evaluation of the effectiveness of routine follow up surveillance Br J Obstet Gynaecol 1996 103 1156 1158 10.1111/j.1471-0528.1996.tb09600.x 8917006 
+15. Gerdin E  Cnattingius S  Johnson P  Pettersson B   Prognostic factors and relapse patterns in early-stage cervical carcinoma after brachytherapy and radical hysterectomy Gynecol Oncol 1994 53 314 319 10.1006/gyno.1994.1140 8206404 
+16. Kunkler IH  Kerr GR  Ludgate SM   The value of follow-up in stage II carcinoma of the cervix Clin Oncol (R Coll Radiol) 1991 3 28 31 10.1016/S0936-6555(05)81037-4 2001339 
+17. Lim KCK  Howells REJ  Evans AS   The role of clinical follow up in early stage cervical cancer in South Wales BJOG 2004 111 1444 1448 10.1111/j.1471-0528.2004.00280.x 15663133 
+18. Rustin GJ  van der Burg ME  Griffin CL  Guthrie D  Lamont A  Jayson GC    MRC OV05; EORTC 55955 investigators. Early versus delayed treatment of relapsed ovarian cancer (MRC OV05/EORTC 55955): a randomised trial Lancet 2010 376 1155 1163 10.1016/S0140-6736(10)61268-8 20888993 
+19. Olaitan A  Murdoch J  Anderson R  James J  Graham J  Barley V   A critical evaluation of current protocols for the follow-up of women treated for gynecological malignancies: a pilot study Int J Gynecol Cancer 2001 11 349 353 10.1046/j.1525-1438.2001.01042.x 11737464 
+20. Norton TR  Manne SL  Rubin J  Hernandez E  Edelson MI  Rosenblum N    Prevalence and predictors of psychological distress among women with ovarian cancer J Clin Oncol 2004 22 919 926 10.1200/JCO.2004.07.028 14990648 
+21. De Moor JS  De Moor CA  Basen-Enquist K  Kudelka A  Bevers MW  Cohen L   Optimism, distress, health-related quality of life, and change in cancer antigen 125 among patients with ovarian cancer undergoing chemotherapy Psychosom Med 2006 678 555 562 10.1097/01.psy.0000222379.71389.91 
+22. Matulonis UA  Kornblith A  Lee H  Bryan J  Gibson C  Wells C    Long-term adjustment of early-stage ovarian cancer survivors Int J Gynecol Cancer 2008 18 1183 1193 10.1111/j.1525-1438.2007.01167.x 18217977 
+23. Penson RT  Wenzel LB  Vergote I  Cella D   Quality of life considerations in gynaecological cancer. FIGO 26th Annual Report in the Results of Treatment in Gynaecological Cancer Int J Gyn Obst 2006 95 S1 S247 S257 10.1016/S0020-7292(06)60040-4 
+24. Morrison V  Henderson BJ  Zinovieff F  Davies G  Gollins S   Common, important, and unmet needs of cancer outpatients Eur J Oncol Nurs 2012 16 115 123 10.1016/j.ejon.2011.04.004 21555246 
+25. Clarke S  Booth L  Velikova G  Hewison J   Social support: gender differences in cancer patients in the United Kingdom Cancer Nurs 2006 29 66 72 10.1097/00002820-200601000-00012 16557124 
+26. Stewart DE  Wong F  Cheung AM  Dancey J  Meana M  Cameron J  Rosen B    Information needs and decisional preferences among women with ovarian cancer Gynecol Oncol 2000 77 3 357 361 10.1006/gyno.2000.5799 10831342 
+27. Greimel E  Lahousen M  Dorfer M  Lambauer M  Lang U   Patients’ view of routine follow-up after gynecological cancer treatment Eur J Obstet Gynecol Reprod Biol 2011 159 1 180 183 10.1016/j.ejogrb.2011.06.027 21802192 
+28. Carlson LE  Waller A  Mitchell AJ   Screening for distress and unmet needs in patients with cancer: review and recommendations J Clin Onc 2012 30 1160 1176 10.1200/JCO.2011.39.5509 
+29. Oshima S  Kisa K  Terashita T  Kawabata H  Maezawa M   Care-seeking behavior of Japanese gynecological cancer survivors suffering from adverse effects BMC Women’s Health 2013 2013 13(1) 
+30. National schedule of reference costs: the main schedule, Department of Health. Retrieved from https://www.gov.uk/government/publications/nhs-reference-costs-2014-to-2015. Accessed 12 Feb 2016.
+31. Innovation to implementation: stratified pathways of care for people living with or beyond cancer, National Cancer Survivorship Initiative. Retrieved from http://www.ncsi.org.uk/wp-content/uploads/howtoguide.pdf. Accessed 10 Sept 2015.
+32. Stratification Process, National Cancer Survivorship Initiative. Retrieved from http://www.ncsi.org.uk/what-we-are-doing/risk-stratified-pathways-of-care/risk-stratification/. Accessed 10 Sept 2015.
+33. Leeson S, Stuart N, Sylvestre Y, Hall L, Whitaker R. Gynaecological cancer follow-up: national survey of current practice in the UK. Br Med J Open. 2013;3:e002859. doi:10.1136/bmjopen-2013-002859.
+34. Budd L, Morrison V, Seale T, Edwards RT. Patients, carers and health care professionals’ preferences for gynaecological cancer follow-up care: a mixed method systematic review (protocol). CRD42015016230. PROSPERO. Available from: http://www.crd.york.ac.uk/PROSPERO/display_record.asp?ID=CRD42015016230. Accessed 25 Mar 2015.
+35. Sim J  Lewis M   The size of a pilot study for a clinical trial should be calculated in relation to considerations of precision and efficiency J Clin Epidemiol 2012 65 3 301 308 10.1016/j.jclinepi.2011.07.011 22169081 
+36. Russell D  Hoare ZSJ  Whitaker R  Whitaker CJ  Russell IT   Generalized method for adaptive randomization in clinical trials Stat Med 2011 30 922 934 21284014 
+37. Concerns checklist, National Cancer Survivorship Initiative. Retrieved from http://www.ncsi.org.uk/wp-content/uploads/NCSI_Concerns_checklist.pdf. Accesssed 10 Sept 2015.
+38. Morrison V. Assessing cancer needs: feasibility of implementation. Oral presentation at the European Health Psychology Society (EHPS) Annual Conference, Innsbruck; 2014.
+39. Morrison V, Holmes M, Gollins S. Unmet needs and the experience of distress in cancer outpatients. Poster presentation at the BPS Division of Health Psychology Annual Conference, York; 2014
+40. Mitchell A   Pooled results from 38 analyses of the accuracy of the distress thermometer and other ultra-short methods of detecting cancer-related mood disorders J Clin Oncol 2007 25 4670 4681 10.1200/JCO.2006.10.0438 17846453 
+41. Aaronson NK  Ahmedzai S  Bergman B    The European Organization for Research and Treatment of Cancer QLQ-C30: a quality-of-life instrument for use in International Clinical Trials in Oncology JNCI 1993 85 365 376 10.1093/jnci/85.5.365 8433390 
+42. EQ-5D-3L User Guide version 2.0, EuroQol. Retrieved from http://www.euroqol.org/about-eq-5d/publications/user-guide.html. Accessed 26 Mar 2016.
+43. ICECAP-A, University of Birmingham. Retrieved from http://www.birmingham.ac.uk/research/activity/mds/projects/HaPS/HE/ICECAP/ICECAP-A/index.aspx. Accessed 26 Mar 2016.
+44. Drummond MF  Sculpher MJ  Torrance GW  O’Brien BJ  Stoddart GL   Methods for the economic evaluation of health care programmes (3rd edition) 2005 Oxford Oxford University Press 
+45 Ridyard CH  Hughes DA  DIRUM Team  Development of a database of instruments for resource-use measurement: purpose, feasibility, and design Value Health 2012 15 650 655 10.1016/j.jval.2012.03.004 22867773
+

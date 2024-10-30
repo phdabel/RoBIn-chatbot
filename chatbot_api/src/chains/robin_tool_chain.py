@@ -11,10 +11,10 @@ class LinearClassifierTool(BaseTool):
     name: str = "RoBIn Classifier"
     description: str = """A linear classifier for risk of bias inference task. ALWAYS use this tool 
         when asked to evaluate or assess the risk of bias. Useful for risk of bias evaluation/assessment/inference.
-        Use the entire prompt as input to the tool. For instance, if the prompt is
-        "Evaluate the risk of bias in this study. The study is about the effects of a new drug on patients with
-        diabetes.", the input should be "Evaluate the risk of bias in this study. The study is about the effects of a new drug on patients with
-        diabetes.".
+        Use only the instructions and context part of the prompt. For instance, if the prompt is
+        "Evaluate the risk of bias in this study. Context: The study is about the effects of a new drug on patients with
+        diabetes. Instructions: What is this study about?", the input should be "What is this study about? The study is about the effects of a new drug on patients with
+        diabetes.". The total input length should not exceed 512 tokens. The tool will return either "High/Unclear risk of bias" or "Low risk of bias" based on the input.
         """
     
     _tokenizer: RobertaTokenizer = PrivateAttr()

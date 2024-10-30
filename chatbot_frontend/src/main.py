@@ -24,8 +24,8 @@ with st.sidebar:
     )
 
     st.header("Example Questions")
-    st.markdown("- Describe the randomization method of this study; if it is not stated in the document do not invent or assume anything about it. Just say, that it is not informed in the text.")
-    st.markdown("- Use the RoB tool to evaluate the risk of bias in the study, regarding selection bias (random sequence generation), given the resultant description.")
+    st.markdown("- Describe the randomization method of this study; if it is not stated in the document do not invent or assume anything about it. Just say that it is not informed in the text.")
+    st.markdown("- Evaluate the risk of bias in the study concerning selection bias (random sequence generation) given the resulting description: 'The study was described as randomized...'")
     st.markdown("- What are the main outcomes of the study? Summarize the results of the study.")
     st.markdown("- What are the concerns about randomization in the risk of bias assessment?")
     st.markdown("- What interventions are being studied to treat ADHD?")
