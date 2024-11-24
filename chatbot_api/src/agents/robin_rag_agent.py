@@ -15,6 +15,7 @@ from langchain import hub
 # from chatbot_api.src.chains.cochrane_cypher_chain import cochrane_cypher_chain
 # from chatbot_api.src.chains.review_study_chain import reviews_vector_chain
 # from chatbot_api.src.chains.pubmed_article_chain import article_retrieval_chain
+# from chatbot_api.src.chains.robin_tool_chain import LinearClassifierTool
 
 # from memory.BaseMemory import ModifiedConversationBufferMemory
 from chains.cochrane_cypher_chain import cochrane_cypher_chain
@@ -23,7 +24,7 @@ from chains.pubmed_article_chain import article_retrieval_chain
 from chains.robin_tool_chain import LinearClassifierTool
 
 ROBIN_AGENT_MODEL = os.getenv("ROBIN_AGENT_MODEL", default="gemma2")
-GPT_MODE = int(os.getenv("GPT_MODE"))
+GPT_MODE = int(os.getenv("GPT_MODE", default=False))
 GPT_MODEL = os.getenv("GPT_MODEL")
 GPT_TEMPERATURE = float(os.getenv("GPT_TEMPERATURE"))
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")

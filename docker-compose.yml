@@ -28,10 +28,12 @@ services:
       - ./chroma_data:/chroma_data
       - ./chat_histories:/chat_histories
       - ./data/models/:/models/
+      - tempFiles:/tmp/
     depends_on:
       - robin_neo4j_etl
     ports:
       - "8000:8000"
+      - "5678:5678"
 
   chatbot_frontend:
     build:
@@ -40,7 +42,11 @@ services:
       - .env
     volumes:
       - ./chatbot_frontend/src/:/app/
+      - tempFiles:/tmp/
     depends_on:
       - chatbot_api
     ports:
       - "8501:8501"
+
+volumes:
+  tempFiles:

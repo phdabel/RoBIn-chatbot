@@ -6,6 +6,7 @@ import secrets
 
 CHATBOT_URL = os.getenv("CHATBOT_URL", "http://localhost:8000/robin-rag-agent")
 FILE_CHATBOT_URL = os.getenv("FILE_CHATBOT_URL", "http://localhost:8000/robin-file-agent")
+PDF_CHATBOT_URL = os.getenv("PDF_CHATBOT_URL", "http://localhost:8000/robin-pdf-agent")
 
 if 'session_id' not in st.session_state:
     st.session_state.session_id = secrets.token_urlsafe(16)
@@ -63,7 +64,7 @@ for message in st.session_state.messages:
                 st.info(message["explanation"])
 
 prompt = st.chat_input("What do you want to know?")
-uploaded_file = st.file_uploader("Upload an article in plain text", type=["txt"])
+uploaded_file = st.file_uploader("Upload an article in plain text", type=["txt", "pdf"])
 
 if prompt:
 
@@ -75,9 +76,18 @@ if prompt:
 
     with st.spinner("Searching for an answer..."):
         if uploaded_file is not None:
-            response = requests.post(FILE_CHATBOT_URL, 
-                                     params={"query_text": prompt, "filename": uploaded_file.name},
-                                     files={"uploaded_file": uploaded_file.getvalue()})
+            filename = uploaded_file.name
+            if uploaded_file.name.endswith(".pdf"):
+                endpoint = PDF_CHATBOT_URL                
+                with open(f"/tmp/{filename}", "wb") as f:
+                    f.write(uploaded_file.getvalue())
+            else:
+                endpoint = FILE_CHATBOT_URL
+
+            response = requests.post(endpoint, 
+                                    params={"query_text": prompt, "filename": filename},
+                                    files={"uploaded_file": uploaded_file.getvalue()})
+            
         else:
             response = requests.post(CHATBOT_URL, json=data)
 

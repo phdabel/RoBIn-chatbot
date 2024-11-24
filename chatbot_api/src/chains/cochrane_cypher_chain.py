@@ -7,9 +7,9 @@ from langchain.prompts import PromptTemplate
 
 ROBIN_CYPHER_MODEL = os.getenv("ROBIN_CYPHER_MODEL")
 
-GPT_MODE = int(os.getenv("GPT_MODE"))
+GPT_MODE = int(os.getenv("GPT_MODE", 0))
 GPT_MODEL = os.getenv("GPT_MODEL")
-GPT_TEMPERATURE = float(os.getenv("GPT_TEMPERATURE"))
+GPT_TEMPERATURE = float(os.getenv("GPT_TEMPERATURE", 0))
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 graph = Neo4jGraph(
