@@ -4,17 +4,14 @@ from typing import Optional, Dict, Any
 from pydantic import PrivateAttr
 from langchain.chains.base import Chain
 from langchain.vectorstores import Chroma
-# from langchain.text_splitter import CharacterTextSplitter
-# from langchain_experimental.text_splitter import SemanticChunker
+from langchain_community.document_loaders import PyMuPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from langchain_core.language_models.llms import BaseLLM
 from langchain_core.embeddings import Embeddings
-from langchain.chains import RetrievalQA
 from langchain.retrievers.multi_query import MultiQueryRetriever
 from langchain_ollama import OllamaLLM, OllamaEmbeddings
 from langchain_openai import ChatOpenAI
-import time
 
 from agents.robin_rag_agent import robin_rag_agent_executor
 
@@ -35,35 +32,31 @@ class FileQAChain(Chain):
         
         query_text = inputs["query_text"]
         uploaded_file = inputs["uploaded_file"]
+        filename = inputs["filename"]
         
         if uploaded_file is not None:
             try:
-                document = uploaded_file.read().decode()
+                if filename.endswith(".pdf"):
+                    texts = PyMuPDFLoader(f"/tmp/{filename}").load()
+                else:
+                    document = uploaded_file.read().decode()
+                    text_splitter = RecursiveCharacterTextSplitter(chunk_size=512, chunk_overlap=32, add_start_index=True)
+                    texts = text_splitter.create_documents([document])
             except UnicodeDecodeError:
                 return {"answer": "Error decoding file. Ensure the file is in UTF-8 format."}
-
-            # text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
-            # texts = text_splitter.split_text(document)
-            # texts = text_splitter.create_documents(texts)
-
-            text_splitter = RecursiveCharacterTextSplitter(chunk_size=512, chunk_overlap=32, add_start_index=True)
-            texts = text_splitter.create_documents([document])
-            
-            # text_splitter = SemanticChunker(embeddings=self._embeddings, number_of_chunks=100)
-            # texts = text_splitter.create_documents([document])
 
             db = Chroma.from_documents(documents=texts, embedding=self._embeddings)#, persist_directory=os.getenv('CHROMA_DB_PATH'))
             qa_chain = MultiQueryRetriever.from_llm(
                 llm=self._llm_model,
                 retriever=db.as_retriever(k=10)
             )
-
-            # qa_chain = RetrievalQA.from_chain_type(llm=self._llm_model,
-            #                                        chain_type="stuff",
-            #                                        retriever=db.as_retriever(k=100))
             
             answer = qa_chain.invoke(query_text)
-            answers = {doc.metadata['start_index']: doc.page_content for doc in answer}
+            os.unlink(f"/tmp/{filename}")
+            if filename.endswith(".pdf"):
+                answers = {i: doc.page_content for i, doc in enumerate(answer)}
+            else:
+                answers = {doc.metadata['start_index']: doc.page_content for doc in answer}
             context = "\n".join([answers[i] for i in list(answers.keys())])
             prompt = f"""Given the context of the provided file, answer the question and follow the instructions provided by the user.
 Be as detailed as possible and do no make assumptions about the context. If you are unsure about the answer, please state so.
