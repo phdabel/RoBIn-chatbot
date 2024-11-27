@@ -52,8 +52,8 @@ class FileQAChain(Chain):
             )
             
             answer = qa_chain.invoke(query_text)
-            os.unlink(f"/tmp/{filename}")
             if filename.endswith(".pdf"):
+                os.unlink(f"/tmp/{filename}")
                 answers = {i: doc.page_content for i, doc in enumerate(answer)}
             else:
                 answers = {doc.metadata['start_index']: doc.page_content for doc in answer}
