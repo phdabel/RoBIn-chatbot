@@ -98,7 +98,7 @@ class LinearClassifier(PreTrainedModel):
         model = cls(config)
 
         model_file_path = os.path.join(save_directory, "pytorch_model.bin")
-        model_state_dict = torch.load(model_file_path, map_location='cpu')
+        model_state_dict = torch.load(model_file_path, weights_only=True, map_location='cpu')        
         model.load_state_dict(model_state_dict)
 
         return model

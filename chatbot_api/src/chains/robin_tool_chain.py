@@ -22,7 +22,7 @@ class LinearClassifierTool(BaseTool):
     
     def __init__(self, model_name: Optional[str] = "allenai/biomed_roberta_base"):
         super().__init__()
-        self._tokenizer = RobertaTokenizer.from_pretrained(model_name)
+        self._tokenizer = RobertaTokenizer.from_pretrained(model_name, clean_up_tokenization_spaces=True)
         self._model = LinearClassifier.from_pretrained("/models/linear_classifier_4e-05/pretrained")
         # self._model = LinearClassifier(LinearConfig(model_name=model_name,
         #                                             num_classes=2,
@@ -31,7 +31,6 @@ class LinearClassifierTool(BaseTool):
         #                                             loss_fn_cls='ce'))
 
     def _run(self, text: str) -> str:
-
         inputs = self._tokenizer(text, return_tensors="pt", padding=True, truncation=True)
 
         with torch.no_grad():

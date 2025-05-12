@@ -18,9 +18,9 @@ from langchain import hub
 # from chatbot_api.src.chains.robin_tool_chain import LinearClassifierTool
 
 # from memory.BaseMemory import ModifiedConversationBufferMemory
-from chains.cochrane_cypher_chain import cochrane_cypher_chain
-from chains.review_study_chain import reviews_vector_chain
-from chains.pubmed_article_chain import article_retrieval_chain
+# from chains.cochrane_cypher_chain import cochrane_cypher_chain
+# from chains.review_study_chain import reviews_vector_chain
+# from chains.pubmed_article_chain import article_retrieval_chain
 from chains.robin_tool_chain import LinearClassifierTool
 
 ROBIN_AGENT_MODEL = os.getenv("ROBIN_AGENT_MODEL", default="gemma2")
@@ -37,40 +37,40 @@ tools = [
         func=robin_classifier._run,
         description=robin_classifier.description
     ),
-    Tool(
-        name="Graph",
-        func=cochrane_cypher_chain.invoke,
-        description="""Useful for answering questions about studies and references, 
-        systematic reviews, evaluations, and bias types using a Neo4j graph database. 
-        Use the entire prompt as input to the tool. For instance, if the prompt is 
-        "How many systematic reviews there are in the graph.", the input should be 
-        "How many systematic reviews there are in the graph.".
-        """,
-    ),
-    Tool(
-        name="RoB",
-        func=reviews_vector_chain.invoke,
-        description="""Useful when you need to answer questions
-        about risk of bias in clinical trials using systematic reviews
-        evaluations as ground truth. Not useful for answering questions
-        that require information from PubMed articles. Use the entire 
-        prompt as input to the tool. For instance, if the prompt is
-        "Summarize supporting sentences from low risk of bias trials.", the input should be
-        "Summarize supporting sentences from low risk of bias trials.".
-        """,
-    ),
-    Tool(
-        name="ArticleIndex",
-        func=article_retrieval_chain.invoke,
-        description="""Useful for answering questions about clinical trial 
-        publications, when searching for articles, papers or studies. 
-        Use the entire prompt as input to the tool. For instance, if the prompt is 
-        "What interventions are studied in clinical trials about COVID-19 treatment?", 
-        the input should be "What interventions are studied in clinical trials about 
-        COVID-19 treatment?". If the prompt is "Search for articles about cardiac diseases.",
-        the input should be "Search for articles about cardiac diseases.".
-        """,
-    ),
+    # Tool(
+    #     name="Graph",
+    #     func=cochrane_cypher_chain.invoke,
+    #     description="""Useful for answering questions about studies and references, 
+    #     systematic reviews, evaluations, and bias types using a Neo4j graph database. 
+    #     Use the entire prompt as input to the tool. For instance, if the prompt is 
+    #     "How many systematic reviews there are in the graph.", the input should be 
+    #     "How many systematic reviews there are in the graph.".
+    #     """,
+    # ),
+    # Tool(
+    #     name="RoB",
+    #     func=reviews_vector_chain.invoke,
+    #     description="""Useful when you need to answer questions
+    #     about risk of bias in clinical trials using systematic reviews
+    #     evaluations as ground truth. Not useful for answering questions
+    #     that require information from PubMed articles. Use the entire 
+    #     prompt as input to the tool. For instance, if the prompt is
+    #     "Summarize supporting sentences from low risk of bias trials.", the input should be
+    #     "Summarize supporting sentences from low risk of bias trials.".
+    #     """,
+    # ),
+    # Tool(
+    #     name="ArticleIndex",
+    #     func=article_retrieval_chain.invoke,
+    #     description="""Useful for answering questions about clinical trial 
+    #     publications, when searching for articles, papers or studies. 
+    #     Use the entire prompt as input to the tool. For instance, if the prompt is 
+    #     "What interventions are studied in clinical trials about COVID-19 treatment?", 
+    #     the input should be "What interventions are studied in clinical trials about 
+    #     COVID-19 treatment?". If the prompt is "Search for articles about cardiac diseases.",
+    #     the input should be "Search for articles about cardiac diseases.".
+    #     """,
+    # ),
 ]
 
 robin_agent_prompt_template = """RoBIn is a large language model created at INF-UFRGS.

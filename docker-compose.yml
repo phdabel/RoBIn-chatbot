@@ -14,7 +14,8 @@ services:
     volumes:
       - ./data/evaluation:/data/evaluation
       - ./data/output:/data/output
-      - D:\biomedical-datasets\pmc-collection\raw\retrieved:/data/pmc
+      # - D:\biomedical-datasets\pmc-collection\raw\retrieved:/data/pmc
+      - /mnt/d/biomedical-datasets/pmc-collection/raw/retrieved:/data/pmc
       - ./robin_evaluation/src:/app/
     external_links:
       - chatbot_api

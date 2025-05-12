@@ -19,7 +19,7 @@ GPT_TEMPERATURE = float(os.getenv("GPT_TEMPERATURE"))
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 neo4j_vector_index = Neo4jVector.from_existing_graph(
-    embedding=OllamaEmbeddings(model="mxbai-embed-large", base_url=os.getenv('OLLAMA_BASE_URL', default='http://localhost:11434')),
+    embedding=OllamaEmbeddings(model="nomic-embed-text", base_url=os.getenv('OLLAMA_BASE_URL', default='http://localhost:11434')),
     url=os.getenv("NEO4J_URI"),
     username=os.getenv("NEO4J_USERNAME"),
     password=os.getenv("NEO4J_PASSWORD"),

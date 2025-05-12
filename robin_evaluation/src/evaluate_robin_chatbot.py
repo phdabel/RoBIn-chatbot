@@ -24,7 +24,8 @@ for i, row in rob_dataset.iterrows():
         continue
 
     data = {
-        'query_text': row['question']
+        'query_text': row['question'],
+        'filename': row['filename'],
     }
     file = {'uploaded_file': (row['filename'], open(filepath, 'rb'))}
     req = requests.post(BASE_URL + FILE_ENDPOINT, files=file, params=data, verify=False)
@@ -41,6 +42,3 @@ for i, row in rob_dataset.iterrows():
 
     with open(ROB_EVALUATION_OUTPUT + 'evaluation_' + str(row['index']) + '.json', 'w') as f:
         json.dump(result, f, indent=4)
-
-    if i > 5:
-        break
